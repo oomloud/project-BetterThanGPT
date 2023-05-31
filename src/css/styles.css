@@ -5,13 +5,27 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./header.css');
+/* Partials */
+@import url('./01_header.css');
+@import url('./02_hero.css');
+@import url('./03_advantages.css');
+@import url('./04_components.css');
+@import url('./05_how_its_made.css');
+@import url('./06_products.css');
+@import url('./07_sellers.css');
+@import url('./08_reviews.css');
+@import url('./09_subscribe.css');
+@import url('./10_footer.css');
+@import url('./11_modal_buy.css');
+@import url('./12_modal_review.css');
+@import url('./13_modal_explore.css');
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  line-height: 1.29em;
   font-weight: 400;
+  letter-spacing: -0.02em;
 
   color: #242424;
   background-color: rgba(255, 255, 255, 0.87);
@@ -21,4 +35,19 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  /* Color */
+  --primary-text-color-theme-light: #111111;
+  --secondary-text-color-theme-light: rgba(17, 17, 17, 0.7);
+  --primary-text-color-theme-dark: #ffffff;
+  --secondary-text-color-theme-dark: rgba(255, 255, 255, 0.7);
+  --accent-color: #fd9222;
+  --color-for-input: rgba(64, 64, 64, 0.3);
+  --color-for-label: #000000;
+  --slider-marker-color: rgba(17, 17, 17, 0.1);
+  --background-color-theme-light: #e2e2e2;
+  --background-color-theme-dark: #1e1823;
+
+  /* transitions */
+  --standard-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
