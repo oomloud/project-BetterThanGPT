@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/https://github.com/oomloudproject-BetterThanGPT/",
+    "build": "vite build --base=/https://github.com/oomloud/project-BetterThanGPT/",
     "preview": "vite preview"
   },
   "devDependencies": {
