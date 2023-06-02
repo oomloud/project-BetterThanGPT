@@ -1,0 +1,182 @@
+.section-components {
+  padding: 72px 0;
+}
+
+.components-header {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  padding: 0 26px 24px;
+
+  color: var(--primary-text-color-theme-light);
+}
+
+.components-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  gap: 32px;
+}
+
+.components-link-1 {
+  position: relative;
+  width: 335px;
+  height: 270px;
+  position: relative;
+  background: var(--accent-color);
+  border-radius: 15px;
+}
+
+.components-link-2 {
+  position: relative;
+  width: 335px;
+  height: 270px;
+  position: relative;
+  background: #ffff;
+  border: 1px solid #fd9222;
+  border-radius: 15px;
+}
+
+.components-link-3 {
+  position: relative;
+  width: 335px;
+  height: 270px;
+  position: relative;
+  background: #1e1823;
+  border-radius: 15px;
+}
+.text-components-header {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--primary-text-color-theme-light);
+  padding-bottom: 32px;
+}
+
+.components-title-1 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  position: absolute;
+  left: 28px;
+  top: 224px;
+  color: #111111;
+}
+.components-title-2 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  position: absolute;
+  left: 28px;
+  top: 224px;
+  color: var(--primary-text-color-theme-dark);
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 335px;
+  height: 270px;
+  border: 1px solid #f1f1f1;
+  border-radius: 15px;
+  perspective: 1000px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  padding-top: 28px;
+  padding-left: 56px;
+  padding-right: 55px;
+  padding-bottom: 25px;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #ffff;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.components-ingredients {
+  padding: 28px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 14px 6px;
+}
+
+.components-product {
+  gap: 14px 6px;
+  flex-direction: row;
+}
+
+.cards {
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #111111;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 16px;
+  border: 1px solid #fd9222;
+  border-radius: 35px;
+}
+
+.components-product {
+  font-size: 10px;
+  line-height: 1.2;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 16px;
+  background-color: var(--accent-color);
+  border-radius: 35px;
+}
+
+.components-stock {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  text-align: start;
+  color: #111111;
+  flex: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
