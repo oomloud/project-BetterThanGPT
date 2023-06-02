@@ -1,0 +1,44 @@
+
+
+.topsellers-text {
+font-family: 'Montserrat';
+font-weight: 400;
+font-size: 14px;
+line-height: 1.28;
+letter-spacing: -0.02em;
+color: #111111;
+} 
+
+
+.desk-card {
+    display: none;
+ }   
+
+ @media only screen and (min-width: 1200px) {
+   .desk-card {
+     display: block;
+   }
+ }
+.buy-btn {
+  display: block;
+  min-width: 120px;
+  height: 41px;
+  border-radius: 100px;
+  border: none;
+  padding: 12px 28px;
+  gap: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  align-items: center;
+  color: #FFFFFF);
+  background: #fd9222;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--color-ocean);
+}
