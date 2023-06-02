@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Simply Chocolate main page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Simply Chocolate — Main</title>
+  </head>
+  <body>
+    <!-- Top sellers -->
+    <section id="topsellers">
+      <h2 class="title"><span class="">Top</span>Sellers</h2>
+      <ul class="topsellers-list list">
+        <li class="topsellers-item">
+          <picture>
+            <source
+              srcset="
+                ../img/img-sellers/img1-desk@1x.jpg 1x,
+                ../img/img-sellers/img1-desk@2x.jpg 2x
+              "
+              media="(min-width: 1200px)" />
+            <source
+              srcset="
+                ../img/img-sellers/img1-tab@1x.jpg 1x,
+                ../img/img-sellers/img1-tab@2x.jpg 2x
+              "
+              media="(min-width: 768px)" />
+            <source
+              srcset="
+                ../img/img-sellers/img1-mob@1x.jpg 1x,
+                ../img/img-sellers/img1-mob@2x.jpg 2x
+              "
+              media="(min-width: 320px)" />
+
+            <img
+              class="topsellers-img"
+              src="../img/img-sellers/img1-mob@1x.jpg"
+              alt="chocolate cacao beans and nut"
+          /></picture>
+          <p>
+            Crazy enough chocolate originates from a bean just like the coffee
+            bean called Cacao. Cacao has been around for thousands of years and
+            was first discovered by the Native American tribe called the Mayans.
+          </p>
+        </li>
+        <li>
+          <picture>
+            <source
+              srcset="
+                ../img/img-sellers/img2-desk@1x.jpg 1x,
+                ../img/img-sellers/img2-desk@2x.jpg 2x
+              "
+              media="(min-width: 1200px)" />
+            <source
+              srcset="
+                ../img/img-sellers/img2-tab@1x.jpg 1x,
+                ../img/img-sellers/img2-tab@2x.jpg 2x
+              "
+              media="(min-width: 768px)" />
+            <source
+              srcset="
+                ../img/img-sellers/img2-mob@1x.jpg 1x,
+                ../img/img-sellers/img2-mob@2x.jpg 2x
+              "
+              media="(min-width: 320px)" />
+            <img
+              class="topsellers-img"
+              src="../img/img-sellers/img2-mob@1x.jpg"
+              alt="chocolate with nuts"
+          /></picture>
+        </li>
+        <li>
+          <img
+            class="topsellers-img"
+            srcset="../img/img-sellers/img3-desk@2x.jpg 2x"
+            src="../img/img-sellers/img3-desk@1x.jpg"
+            alt="dark chocolate"
+          />
+        </li>
+      </ul>
+
+      <button class="buy-btn" type="button" data-modal-open>Buy now</button>
+    </section>
+  </body>
+</html>
