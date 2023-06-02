@@ -13,6 +13,10 @@
     padding-bottom: 50px;
   }
 }
+@media only screen and (min-width: minwidthpx) {
+  .advantages-container {
+  }
+}
 .advantages-text {
   color: rgba(255, 255, 255, 0.7);
 }
@@ -36,18 +40,21 @@
   }
 }
 .advantages-item {
-  display: flex;
-  flex-direction: column;
+  position: relative;
   max-width: 308px;
 }
+
 @media only screen and (min-width: 1200px) {
   .advantages-item:not(:last-child)::after {
     display: block;
     content: '';
-    width: 124px;
-    height: 0px;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    width: 0px;
+    height: 124px;
     border: 1px solid rgba(255, 255, 255, 0.5);
-    transform: rotate(90deg);
+    transform: translateY(-50%);
   }
 }
 .advantages-title {
