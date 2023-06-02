@@ -10,11 +10,14 @@
 @media only screen and (min-width: 768px) {
   .advantages-container {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 85px;
   }
 }
-@media only screen and (min-width: minwidthpx) {
-  .advantages-container {
+@media only screen and (min-width: 1200px) {
+  .container.advantages-container {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
   }
 }
 .advantages-text {
@@ -30,12 +33,14 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 32px;
+    row-gap: 50px;
+    column-gap: 60px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .advantages-list {
     flex-wrap: nowrap;
+    justify-content: space-between;
     gap: 70px;
   }
 }
