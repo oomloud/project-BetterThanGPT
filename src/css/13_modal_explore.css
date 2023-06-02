@@ -1,3 +1,119 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+@import url('./reset.css');
+/* Partials */
+@import url('./01_header.css');
+@import url('./02_hero.css');
+@import url('./03_advantages.css');
+@import url('./04_components.css');
+@import url('./05_how_its_made.css');
+@import url('./06_products.css');
+@import url('./07_sellers.css');
+@import url('./08_reviews.css');
+@import url('./09_subscribe.css');
+@import url('./10_footer.css');
+@import url('./11_modal_buy.css');
+@import url('./12_modal_review.css');
+@import url('./13_modal_explore.css');
+
+:root {
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    line-height: 1.29em;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+
+    color: #242424;
+    background-color: rgba(255, 255, 255, 0.87);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    /* Color */
+    --primary-text-color-theme-light: #111111;
+    --secondary-text-color-theme-light: rgba(17, 17, 17, 0.7);
+    --primary-text-color-theme-dark: #ffffff;
+    --secondary-text-color-theme-dark: rgba(255, 255, 255, 0.7);
+    --accent-color: #fd9222;
+    --color-for-input: rgba(64, 64, 64, 0.3);
+    --color-for-label: #000000;
+    --slider-marker-color: rgba(17, 17, 17, 0.1);
+    --background-color-theme-light: #e2e2e2;
+    --background-color-theme-dark: #1e1823;
+
+    /* transitions */
+    --standard-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* **************************************************************** */
+/* Generic Styles */
+/* **************************************************************** */
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media only screen and (min-width: 375px) {
+    .container {
+        max-width: 375px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+.link {
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+}
+
+.section-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2em;
+    /* or 120% */
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color-theme-light);
+}
+
+@media only screen and (min-width: 768px) {
+    .section-title {
+        font-size: 24px;
+        line-height: 28px;
+        /* or 117% */
+    }
+}
+
+/**
+  |============================
+  | My styles
+  |============================
+*/
+
 .explore-section {
     padding-top: 62px;
     padding-bottom: 63px;
@@ -5,20 +121,52 @@
     flex-direction: column;
     align-items: center;
     gap: 24px;
-    background-color: rgb(117, 49, 10);
+    background-image: url(../img/13_modal_explore/explore-section-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.explore-section-title {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: -0.03em;
-    text-align: center;
-    text-transform: uppercase;
-    color: ;
+@media only screen and (min-width: 768px) {
+    .explore-section {
+        padding-top: 72px 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {}
+
+.section-title.explore-section-title {
+    color: var(--primary-text-color-theme-dark);
+    max-width: 291px;
+}
+
+@media only screen and (min-width: 768px) {
+    .section-title.explore-section-title {
+        max-width: 378px;
+    }
 }
 
 .explore-section-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
     text-align: center;
     max-width: 326px;
+    color: var(--primary-text-color-theme-dark);
+}
+
+.explore-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 128px;
+    height: 41px;
+    border-radius: 100px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1;
+    color: var(--primary-text-color-theme-dark);
+    background-color: var(--accent-color);
+    border: none;
 }
