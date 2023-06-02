@@ -1,0 +1,12 @@
+.section-title-first {
+    color: var(--accent-color);
+}
+
+.section-title-position {
+    margin-bottom: 32px;
+}
+
+.swiper {
+    width: 335px;
+    height: 364px;
+}
