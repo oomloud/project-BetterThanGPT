@@ -4,18 +4,20 @@
 /* CONTAINER  */
 .advantages-container {
   width: 100%;
-  padding: 0 20px;
+  padding: 20px;
 }
 .advantages-text {
   color: rgba(255, 255, 255, 0.7);
 }
-/* .advantages-list {
-} */
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+  max-width: 308px;
+  gap: 20px;
+}
 
 .advantages-item {
   display: block;
-
-  padding-bottom: 20px;
 }
 
 .advantages-title {
@@ -41,7 +43,6 @@
 .advantages-icon {
   display: block;
   fill: var(--accent-color);
-  /* background-color: var(--cloud-bg-color); */
 }
 /* @media only screen and (min-width: 375px) {
   .container {
