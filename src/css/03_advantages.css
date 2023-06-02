@@ -4,7 +4,14 @@
 /* CONTAINER  */
 .advantages-container {
   width: 100%;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .advantages-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 .advantages-text {
   color: rgba(255, 255, 255, 0.7);
@@ -12,12 +19,26 @@
 .advantages-list {
   display: flex;
   flex-direction: column;
-  max-width: 308px;
+
   gap: 20px;
 }
-
+@media only screen and (min-width: 768px) {
+  .advantages-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 32px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .advantages-list {
+    flex-wrap: nowrap;
+    gap: 50px;
+  }
+}
 .advantages-item {
   display: block;
+  max-width: 308px;
 }
 
 .advantages-title {
