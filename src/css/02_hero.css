@@ -1,0 +1,119 @@
+.hero-content {
+  height: 621px;
+  padding: 20px;
+  background-image: url(/img/01_hero/hero_img_mobile.jpg);
+  background-color: var(--background-color-theme-dark);
+  border-radius: 30px;
+  border-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: end;
+}
+
+.hero-subheader {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2em;
+  letter-spacing: -0.03em;
+  color: var(--primary-text-color-theme-dark);
+}
+
+.hero-btn-container {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+}
+
+.btn-fill {
+  padding: 12px 28px;
+  height: 45px;
+  border-color: transparent;
+  border-radius: 100px;
+  background-color: var(--accent-color);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--primary-text-color-theme-dark);
+  transition: color var(--standard-transition),
+    background-color var(--standard-transition);
+}
+
+.btn-fill:hover,
+.btn-fill:focus {
+  background-color: var(--button-hover-color);
+  color: var(--accent-color);
+}
+
+.btn-outline-light {
+}
+
+.btn-outline-dark {
+  padding: 12px 12px;
+  height: 45px;
+  border-color: var(--primary-text-color-theme-dark);
+  border: 1px solid var(--primary-text-color-theme-dark);
+  border-radius: 100px;
+  background-color: transparent;
+
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--primary-text-color-theme-dark);
+  transition: color var(--standard-transition),
+    border-color var(--standard-transition);
+}
+
+.btn-outline-dark:hover,
+.btn-outline-dark:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.hero-scroll {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  align-items: center;
+  width: 107px;
+}
+
+.scroll-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17em;
+  letter-spacing: -0.03em;
+  color: var(--primary-text-color-theme-dark);
+  transition: color var(--standard-transition);
+}
+
+.hero-scroll-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--primary-text-color-theme-dark);
+  color: var(--accent-color);
+  margin-right: auto;
+  transition: color var(--standard-transition),
+    background-color var(--standard-transition);
+}
+
+.hero-scroll-svg {
+  fill: currentColor;
+}
+
+.hero-scroll:hover .scroll-text,
+.hero-scroll:focus .scroll-text {
+  color: var(--accent-color);
+}
+
+.hero-scroll:hover .hero-scroll-btn,
+.hero-scroll:focus .hero-scroll-btn {
+  background-color: var(--accent-color);
+  color: var(--primary-text-color-theme-dark);
+}
