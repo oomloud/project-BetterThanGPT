@@ -1,0 +1,52 @@
+/**
+  |============================
+  | How_its_made
+  |============================
+*/
+.how_its_made {
+  padding-bottom: 72px;
+}
+
+.how_its_made-container {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: start;
+}
+.section-title {
+}
+.title-made {
+  color: var(--accent-color);
+}
+/* переделать картинки */
+.how_its_made-img {
+  margin-top: 32px;
+  
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  border-radius: 15px;
+}
+.how_its_made-title {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  color: var(--primary-text-color-theme-light);
+}
+.how_its_made-list {
+  display: flex;
+  gap: 18px;
+  flex-direction: column;
+  list-style: disc;
+  align-items: start;
+  justify-content: center;
+}
+.how_its_made-iteam {
+}
+.how_its_made-text {
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--primary-text-color-theme-light);
+}
+.try-chocolates {
+  padding: 20px 14px;
+}
