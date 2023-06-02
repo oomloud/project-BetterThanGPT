@@ -1,0 +1,24 @@
+.explore-section {
+    padding-top: 62px;
+    padding-bottom: 63px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    background-color: rgb(117, 49, 10);
+}
+
+.explore-section-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    color: ;
+}
+
+.explore-section-text {
+    text-align: center;
+    max-width: 326px;
+}
