@@ -6,12 +6,22 @@
 .how_its_made {
   padding-bottom: 72px;
 }
+@media only screen and (min-width: 768px) {
+  .how_its_made {
+    padding-bottom: 100px;
+  }
+}
 
 .how_its_made-container {
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    align-items: start;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: start;
+}
+@media only screen and (min-width: 768px) {
+  .how_its_made-container {
+    align-items: center;
+  }
 }
 .section-title {
 }
@@ -21,9 +31,18 @@
 /* переделать картинки */
 .how_its_made-img {
   margin-top: 32px;
-  
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  );
   border-radius: 15px;
+}
+@media only screen and (min-width: 768px) {
+  .how_its_made-img {
+    margin-top: 50px;
+  }
 }
 .how_its_made-title {
   margin-bottom: 20px;
@@ -32,6 +51,11 @@
   line-height: 1.33;
   color: var(--primary-text-color-theme-light);
 }
+@media only screen and (min-width: 768px) {
+  .how_its_made-title {
+    margin-bottom: 28px;
+  }
+}
 .how_its_made-list {
   display: flex;
   gap: 18px;
@@ -39,6 +63,7 @@
   list-style: disc;
   align-items: start;
   justify-content: center;
+  padding-left: 16px;
 }
 .how_its_made-iteam {
 }
@@ -49,4 +74,10 @@
 }
 .try-chocolates {
   padding: 20px 14px;
+}
+@media only screen and (min-width: 768px) {
+  .try-chocolates {
+    padding: 32px;
+    max-width: 614px;
+  }
 }
