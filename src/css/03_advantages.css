@@ -58,7 +58,17 @@
 @media only screen and (min-width: 1200px) {
   .advantages-item {
     max-width: 326px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .advantages-item {
     padding-right: 18px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .advantages-item:nth-child(3) {
+    padding-right: 0;
   }
 }
 @media only screen and (min-width: 1200px) {
