@@ -28,49 +28,6 @@
   justify-content: start;
 }
 
-.btn-fill {
-  padding: 12px 28px;
-  height: 45px;
-  border-color: transparent;
-  border-radius: 100px;
-  background-color: var(--accent-color);
-  font-weight: 600;
-  font-size: 14px;
-  color: var(--primary-text-color-theme-dark);
-  transition: color var(--standard-transition),
-    background-color var(--standard-transition);
-}
-
-.btn-fill:hover,
-.btn-fill:focus {
-  background-color: var(--button-hover-color);
-  color: var(--accent-color);
-}
-
-.btn-outline-light {
-}
-
-.btn-outline-dark {
-  padding: 12px 12px;
-  height: 45px;
-  border-color: var(--primary-text-color-theme-dark);
-  border: 1px solid var(--primary-text-color-theme-dark);
-  border-radius: 100px;
-  background-color: transparent;
-
-  font-weight: 600;
-  font-size: 14px;
-  color: var(--primary-text-color-theme-dark);
-  transition: color var(--standard-transition),
-    border-color var(--standard-transition);
-}
-
-.btn-outline-dark:hover,
-.btn-outline-dark:focus {
-  border-color: var(--accent-color);
-  color: var(--accent-color);
-}
-
 .hero-scroll {
   display: flex;
   flex-direction: row;
