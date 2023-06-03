@@ -11,9 +11,7 @@
     padding-bottom: 128px;
   }
 }
-span {
-  color: var(--accent-color);
-}
+
 .topsellers-text {
   /* font-family: 'Montserrat'; */
   font-weight: 400;
