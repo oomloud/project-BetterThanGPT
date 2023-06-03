@@ -80,30 +80,17 @@
     width: 407px;
   }
 }
+
 .buy-btn {
   display: block;
   min-width: 120px;
-  height: 41px;
-  border-radius: 100px;
-  border: none;
-  padding: 12px 28px;
   margin-left: auto;
   margin-right: auto;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.21;
-  color: var(--primary-text-color-theme-dark);
-  background: var(--accent-color);
-  transition: border-color var(--standard-transition),
-    color var(--standard-transition);
 }
 @media only screen and (min-width: 768px) {
   .buy-btn {
     margin-right: 0;
+    height: 50px;
+    min-width: 162px;
   }
-}
-.hero-btn:hover,
-.hero-btn:focus {
-  background-color: #fcf1e0;
-  color: var(--accent-color);
 }
