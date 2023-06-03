@@ -8,7 +8,20 @@ const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
   slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 30,
+
+    breakpoints: {
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    // when window width is >= 1200px
+    1138: {
+      slidesPerView: 4,
+      spaceBetween: 40
+    }
+  },
 
   // If we need pagination
   pagination: {
