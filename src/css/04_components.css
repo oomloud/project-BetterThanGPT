@@ -49,11 +49,11 @@
   }
 }
 
-.span-components {
+/* .span-components {
   color: var(--accent-color);
   padding-left: 3px;
   padding-right: 3px;
-}
+} */
 
 .text-components-header {
   font-style: normal;
@@ -89,11 +89,16 @@
   }
 }
 
+.link-comp {
+    width: 335px;
+    height: 270px;
+    border-radius: 15px;
+}
+
 .components-link-1 {
-  width: 335px;
-  height: 270px;
+ 
   background: var(--accent-color);
-  border-radius: 15px;
+  
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
@@ -109,11 +114,8 @@
 }
 
 .components-link-2 {
-  width: 335px;
-  height: 270px;
   background: #ffff;
   border: 1px solid #fd9222;
-  border-radius: 15px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
@@ -129,10 +131,8 @@
 }
 
 .components-link-3 {
-  width: 335px;
-  height: 270px;
   background: #1e1823;
-  border-radius: 15px;
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
@@ -148,11 +148,8 @@
 }
 
 .components-link-4 {
-  width: 335px;
-  height: 270px;
   background: #ffff;
   border: 1px solid #fd9222;
-  border-radius: 15px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
@@ -202,9 +199,10 @@
 
 .flip-card {
   background-color: transparent;
-  width: 335px;
+  max-width: 335px;
   height: 270px;
   perspective: 1000px;
+  overflow: hidden;
 }
 
 @media only screen and (min-width: 1200px) {
