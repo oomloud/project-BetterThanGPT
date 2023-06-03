@@ -63,7 +63,7 @@
       </li>
     </ul>
 
-    <button class="mobile-menu-open js-open-menu" type="button">
+    <button class="mobile-menu-open" data-modal-open type="button">
       <svg class="mobile-menu-open-icon" width="28" height="28">
         <use href="/img/icons.svg#icon-burger"></use>
       </svg>
@@ -72,67 +72,70 @@
 
   <!-- =========================MOBILE MENU========================= -->
 
-  <div class="mobile-menu js-menu-container">
-    <button class="mobile-menu-close-btn js-close-menu" type="button">
-      <svg class="mobile-menu-close-icon" width="28" height="28">
-        <use href="/img/icons.svg#icon-close"></use>
-      </svg>
-    </button>
-    <nav class="mobile-nav">
-      <ul class="mobile-nav-list list">
-        <li class="mobile-nav-item">
-          <a href="#home" class="mobile-nav-link link">Home</a>
-        </li>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="mobile-menu">
+      <button class="mobile-menu-close-btn" data-modal-close type="button">
+        <svg class="mobile-menu-close-icon" width="28" height="28">
+          <use href="/img/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="mobile-nav">
+        <ul class="mobile-nav-list list">
+          <li class="mobile-nav-item">
+            <a href="#home" class="mobile-nav-link link">Home</a>
+          </li>
 
-        <li class="mobile-nav-item">
-          <a href="#how-its-made" class="mobile-nav-link link"
-            >How it's made?</a
+          <li class="mobile-nav-item">
+            <a href="#how-its-made" class="mobile-nav-link link"
+              >How it's made?</a
+            >
+          </li>
+
+          <li class="mobile-nav-item">
+            <a href="#ourproducts" class="mobile-nav-link link">Our products</a>
+          </li>
+
+          <li class="mobile-nav-item">
+            <a href="#topsellers" class="mobile-nav-link link">Top sellers</a>
+          </li>
+
+          <li class="mobile-nav-item">
+            <a href="#chocolateisloved" class="mobile-nav-link link"
+              >Chocolate is loved</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="mobile-social-list">
+        <li class="social-list-item">
+          <a
+            href="https://www.instagram.com/"
+            class="mobile-social-list-link"
+            target="_blank"
+            rel="noopener noreferrer"
           >
+            <svg class="mobile-social-icon" width="22" height="22">
+              <use href="/img/icons.svg#icon-ig"></use>
+            </svg>
+          </a>
         </li>
 
-        <li class="mobile-nav-item">
-          <a href="#ourproducts" class="mobile-nav-link link">Our products</a>
-        </li>
-
-        <li class="mobile-nav-item">
-          <a href="#topsellers" class="mobile-nav-link link">Top sellers</a>
-        </li>
-
-        <li class="mobile-nav-item">
-          <a href="#chocolateisloved" class="mobile-nav-link link"
-            >Chocolate is loved</a
+        <li class="mobile-social-list-item">
+          <a
+            href="https://twitter.com/"
+            class="mobile-social-list-link"
+            target="_blank"
+            rel="noopener noreferrer"
           >
+            <svg class="mobile-social-icon" width="22" height="22">
+              <use href="/img/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
         </li>
       </ul>
-    </nav>
-
-    <ul class="mobile-social-list">
-      <li class="social-list-item">
-        <a
-          href="https://www.instagram.com/"
-          class="mobile-social-list-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <svg class="mobile-social-icon" width="22" height="22">
-            <use href="/img/icons.svg#icon-ig"></use>
-          </svg>
-        </a>
-      </li>
-
-      <li class="mobile-social-list-item">
-        <a
-          href="https://twitter.com/"
-          class="mobile-social-list-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <svg class="mobile-social-icon" width="22" height="22">
-            <use href="/img/icons.svg#icon-twitter"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
+    </div>
   </div>
+
   <!-- =========================/MOBILE MENU========================= -->
 </header>
