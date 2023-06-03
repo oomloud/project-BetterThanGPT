@@ -63,7 +63,7 @@
       </li>
     </ul>
 
-    <button class="mobile-menu-open" data-modal-open type="button">
+    <button class="mobile-menu-open" data-mobile-menu-open type="button">
       <svg class="mobile-menu-open-icon" width="28" height="28">
         <use href="/img/icons.svg#icon-burger"></use>
       </svg>
@@ -72,9 +72,13 @@
 
   <!-- =========================MOBILE MENU========================= -->
 
-  <div class="backdrop is-hidden" data-modal>
+  <div class="backdrop is-hidden" data-mobile-menu>
     <div class="mobile-menu">
-      <button class="mobile-menu-close-btn" data-modal-close type="button">
+      <button
+        class="mobile-menu-close-btn"
+        data-mobile-menu-close
+        type="button"
+      >
         <svg class="mobile-menu-close-icon" width="28" height="28">
           <use href="/img/icons.svg#icon-close"></use>
         </svg>
@@ -136,6 +140,5 @@
       </ul>
     </div>
   </div>
-
   <!-- =========================/MOBILE MENU========================= -->
 </header>
