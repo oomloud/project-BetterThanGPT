@@ -170,3 +170,29 @@
     background-color: var(--accent-color);
     border: none;
 }
+
+/**
+  |============================
+  | Modal
+  |============================
+*/
+
+.explore-overlay {}
+
+.explore-modal {}
+
+.explore-modal-img-container {
+    width: 311px;
+
+    overflow: hidden;
+}
+
+.explore-modal-img {
+    margin-bottom: 32px;
+}
+
+.explore-modal-text {}
+
+.explore-modal-accent {
+    color: var(--accent-color);
+}
