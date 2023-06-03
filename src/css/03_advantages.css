@@ -46,7 +46,8 @@
 }
 .advantages-item {
   position: relative;
-  max-width: 308px;
+  max-width: 326px;
+  padding-right: 18px;
 }
 
 @media only screen and (min-width: 1200px) {
