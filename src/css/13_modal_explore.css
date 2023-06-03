@@ -7,8 +7,6 @@
     opacity: 1;
     visibility: visible;
 
-    background: rgba(73, 75, 50, 0.4);
-
     transition: opacity var(--standard-transition), visibility var(--standard-transition);
 }
 
