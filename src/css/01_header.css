@@ -124,6 +124,7 @@
   .page-header .social-list {
     display: flex;
     gap: 18px;
+    margin-left: auto;
   }
 
   .social-icon {
