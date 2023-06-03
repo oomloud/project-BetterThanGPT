@@ -163,20 +163,6 @@
    pointer-events: auto - це мало б бути значення за замовчуванням;
  } */
 
-.mobile-menu-container {
-  height: 100%;
-  padding-top: 136px;
-  padding-left: 50px;
-}
-
-@media only screen and (min-width: 768px) {
-  .mobile-menu-container {
-    height: 100%;
-    padding-top: 156px;
-    padding-left: 85px;
-  }
-}
-
 .mobile-menu-close-btn {
   position: absolute;
   top: 20px;
@@ -195,6 +181,8 @@
   .mobile-menu-close-btn {
     top: 24px;
     right: 32px;
+    width: 32px;
+    height: 32px;
   }
 }
 
@@ -204,14 +192,35 @@
   color: var(--accent-color);
 }
 
+@media only screen and (min-width: 768px) {
+  .mobile-menu-close-btn:hover,
+    .mobile-menu-close-btn:focus {
+      transform: scale(1.25);
+    
+    }
+}
+
 .mobile-menu-close-icon {
   stroke: currentColor;
+}
+
+.mobile-nav {
+  padding-top: 136px;
+  padding-left: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-nav {
+    padding-top: 156px;
+    padding-left: 85px;
+  }
 }
 
 .mobile-nav-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: -0.02em;
   color: var(--primary-text-color-theme-dark);
   transition: color 500ms ease-out;
 }
@@ -231,10 +240,6 @@
   gap: 18px;
   bottom: 20px;
   left: 20px;
-
-  /* @media only screen and (min-width: 403px) {
-     gap: 56px;
-   } */
 }
 
 @media only screen and (min-width: 768px) {
@@ -256,12 +261,18 @@
 .mobile-social-icon {
   display: block;
   stroke: currentColor;
-  transition: stroke 500ms ease-out;
-  stroke: currentColor;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-social-icon {
+         width: 24px;
+      height: 24px;
+    }
 }
 
 /* =========================/MOBILE MENU========================= */
 
 /* Зробити коментарі
 анымацію для навігації мобільного меню
-java script */
+java script
+вияснити за дефолтні стилі для body */
