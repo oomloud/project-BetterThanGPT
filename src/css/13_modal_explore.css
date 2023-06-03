@@ -1,198 +1,193 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-/* Partials */
-@import url('./01_header.css');
-@import url('./02_hero.css');
-@import url('./03_advantages.css');
-@import url('./04_components.css');
-@import url('./05_how_its_made.css');
-@import url('./06_products.css');
-@import url('./07_sellers.css');
-@import url('./08_reviews.css');
-@import url('./09_subscribe.css');
-@import url('./10_footer.css');
-@import url('./11_modal_buy.css');
-@import url('./12_modal_review.css');
-@import url('./13_modal_explore.css');
+.explore-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
 
-:root {
-    font-family: Montserrat, sans-serif;
-    font-size: 14px;
-    line-height: 1.29em;
-    font-weight: 400;
-    letter-spacing: -0.02em;
-
-    color: #242424;
-    background-color: rgba(255, 255, 255, 0.87);
-
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
-
-    /* Color */
-    --primary-text-color-theme-light: #111111;
-    --secondary-text-color-theme-light: rgba(17, 17, 17, 0.7);
-    --primary-text-color-theme-dark: #ffffff;
-    --secondary-text-color-theme-dark: rgba(255, 255, 255, 0.7);
-    --accent-color: #fd9222;
-    --color-for-input: rgba(64, 64, 64, 0.3);
-    --color-for-label: #000000;
-    --slider-marker-color: rgba(17, 17, 17, 0.1);
-    --background-color-theme-light: #e2e2e2;
-    --background-color-theme-dark: #1e1823;
-
-    /* transitions */
-    --standard-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #1e1823;
 }
 
-/* **************************************************************** */
-/* Generic Styles */
-/* **************************************************************** */
-
-.container {
-    padding-left: 20px;
-    padding-right: 20px;
+.explore-overlay.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
-@media only screen and (min-width: 375px) {
-    .container {
-        max-width: 375px;
-        margin: 0 auto;
-    }
+.explore-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 311px;
+    height: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: var(--primary-text-color-theme-dark);
+    z-index: 10;
 }
 
 @media only screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
+    .explore-modal {
+        width: 438px;
+        height: 412px;
     }
 }
 
-@media only screen and (min-width: 1200px) {
-    .container {
-        max-width: 1200px;
-    }
-}
-
-.link {
-    text-decoration: none;
-    cursor: pointer;
-    display: block;
-}
-
-.section-title {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.2em;
-    /* or 120% */
-    text-align: center;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    color: var(--primary-text-color-theme-light);
+.explore-modal-img-container {
+    width: 100%;
+    height: 169px;
+    background-image: url(../img/13_modal_explore/explore-section-modal.jpg);
+    background-position: left;
+    background-size: cover;
+    overflow: hidden;
 }
 
 @media only screen and (min-width: 768px) {
-    .section-title {
+    .explore-modal-img-container {
+        height: 196px;
+    }
+}
+
+.explore-modal-text {
+    padding: 32px 24px;
+}
+
+@media only screen and (min-width: 768px) {
+    .explore-modal-text {
+        padding: 40px;
+    }
+}
+
+.explore-modal-text .explore-modal-title {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+    .explore-modal-text .explore-modal-title {
         font-size: 24px;
-        line-height: 28px;
-        /* or 117% */
+        line-height: 1.17;
+        width: 298px;
     }
 }
 
-/**
-  |============================
-  | My styles
-  |============================
-*/
+.explore-modal-accent {
+    color: var(--accent-color);
+}
 
-.explore-section {
-    padding-top: 62px;
-    padding-bottom: 63px;
+.explore-modal-form {
+    position: relative;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 24px;
-    background-image: url(../img/13_modal_explore/explore-section-bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-@media only screen and (min-width: 768px) {
-    .explore-section {
-        padding-top: 72px 0;
-    }
-}
-
-@media only screen and (min-width: 1200px) {}
-
-.section-title.explore-section-title {
-    color: var(--primary-text-color-theme-dark);
-    max-width: 291px;
-}
-
-@media only screen and (min-width: 768px) {
-    .section-title.explore-section-title {
-        max-width: 378px;
-    }
-}
-
-.explore-section-text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.02em;
-    text-align: center;
-    max-width: 326px;
-    color: var(--primary-text-color-theme-dark);
-}
-
-.explore-button {
-    display: flex;
     justify-content: center;
-    align-items: center;
-    width: 128px;
-    height: 41px;
+    gap: 8px;
+}
+
+.explore-modal-input {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 18px;
+    padding-right: 108px;
+    height: 45px;
+    width: 100%;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+    border-radius: 25px;
+    outline: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .explore-modal-input {
+        padding: 0 18px;
+        height: 52px;
+    }
+}
+
+
+.explore-modal-input::placeholder {
+    color: var(--color-for-input);
+}
+
+.explore-modal-btn-mobile {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 100px;
+    height: 45px;
     border-radius: 100px;
+    border: none;
 
     font-weight: 600;
     font-size: 14px;
     line-height: 1;
-    color: var(--primary-text-color-theme-dark);
     background-color: var(--accent-color);
+    color: var(--primary-text-color-theme-dark);
+
+    transition: color var(--standard-transition), background-color var(--standard-transition);
+}
+
+@media only screen and (min-width: 768px) {
+    .explore-modal-btn-mobile {
+        display: none;
+    }
+}
+
+.explore-modal-btn-mobile:hover,
+.explore-modal-btn-mobile:focus {
+    color: var(--accent-color);
+    background-color: #fcf1e0;
+}
+
+.explore-modal-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 137px;
+    height: 52px;
+    outline: none;
+    border: none;
+    border-radius: 100px;
+    background-color: var(--accent-color);
+    color: var(--primary-text-color-theme-dark);
+
+    transition: color var(--standard-transition), background-color var(--standard-transition);
+}
+
+.explore-modal-btn:hover,
+.explore-modal-btn:focus {
+    color: var(--accent-color);
+    background-color: #fcf1e0;
+}
+
+@media only screen and (max-width: 768px) {
+    .explore-modal-btn {
+        display: none;
+    }
+}
+
+.explore-modal-close-btn {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 15px;
+    right: 14px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+    border-radius: 50%;
     border: none;
 }
 
-/**
-  |============================
-  | Modal
-  |============================
-*/
-
-.explore-overlay {}
-
-.explore-modal {}
-
-.explore-modal-img-container {
-    width: 311px;
-
-    overflow: hidden;
-}
-
-.explore-modal-img {
-    margin-bottom: 32px;
-}
-
-.explore-modal-text {}
-
-.explore-modal-accent {
-    color: var(--accent-color);
+.explore-modal-close-icon {
+    stroke: var(--primary-text-color-theme-dark);
 }

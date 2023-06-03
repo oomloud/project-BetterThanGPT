@@ -21,53 +21,35 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap"
       rel="stylesheet"
     />
-    <title>Simply Chocolate — Main</title>
+    <title>Modal Explore new Chocolate</title>
   </head>
 
   <body>
-    <load ="partials/01_header.html" />
-    <load ="partials/02_hero.html" />
-    <load ="partials/03_advantages.html" />
-    <load ="partials/04_components.html" />
-    <load ="partials/05_how_its_made.html" />
-    <load ="partials/06_products.html" />
-    <load ="partials/07_sellers.html" />
-    <load ="partials/08_reviews.html" />
-    <load ="partials/09_subscribe.html" />
-    <load ="partials/10_footer.html" />
-    <load ="partials/11_modal_buy.html" />
-    <load ="partials/12_modal_review.html" />
-    <load ="partials/13_modal_explore.html" />
-
-    <section class="container explore-section">
-      <h2 class="section-title explore-section-title">
-        Explore our new chocolate first
-      </h2>
-      <p class="explore-section-text">
-        From the velvety texture to the rich and complex flavor, our New
-        Chocolate is a true indulgence that will leave you craving more. Made
-        with only the finest ingredients and handcrafted with the utmost care,
-        each piece is a work of art that is sure to please.
-      </p>
-      <button class="explore-button" type="button" data-modal-open>
-        Subscribe
-      </button>
-    </section>
-
     <div class="explore-overlay">
       <div class="explore-modal">
-        <div class="explore-modal-img-container">
-          <img
-            class="explore-modal-img"
-            src="../img/13_modal_explore/explore-section-modal.jpg"
-            alt="Chocolate"
-          />
-        </div>
+        <button class="explore-modal-close-btn" type="button" data-modal-close>
+          <svg class="explore-modal-close-icon" width="24" height="24">
+            <use href="../img/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="explore-modal-img-container"></div>
         <div class="explore-modal-text">
-          <h2 class="section-title">
+          <h2 class="section-title explore-modal-title">
             Explore our
             <span class="explore-modal-accent">new chocolate</span> first!
           </h2>
+          <form class="explore-modal-form">
+            <input
+              class="explore-modal-input"
+              type="email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              placeholder="Enter your email"
+            />
+            <button class="explore-modal-btn-mobile" type="submit">
+              Submit
+            </button>
+            <button class="explore-modal-btn" type="submit">Subscribe</button>
+          </form>
         </div>
       </div>
     </div>
