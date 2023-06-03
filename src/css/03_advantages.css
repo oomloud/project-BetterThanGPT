@@ -34,7 +34,7 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     row-gap: 50px;
-    column-gap: 60px;
+    column-gap: 32px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -49,7 +49,18 @@
   max-width: 326px;
   padding-right: 18px;
 }
-
+@media only screen and (min-width: 768px) {
+  .advantages-item {
+    max-width: 336px;
+    padding-right: 28px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .advantages-item {
+    max-width: 326px;
+    padding-right: 18px;
+  }
+}
 @media only screen and (min-width: 1200px) {
   .advantages-item:not(:last-child)::after {
     display: block;
