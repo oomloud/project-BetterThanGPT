@@ -96,7 +96,8 @@ span {
   line-height: 1.21;
   color: var(--primary-text-color-theme-dark);
   background: var(--accent-color);
-  transition: background-color, color: var(--standard-transition);
+  transition: border-color var(--standard-transition),
+    color var(--standard-transition);
 }
 @media only screen and (min-width: 768px) {
   .buy-btn {
