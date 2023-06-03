@@ -7,7 +7,9 @@
     opacity: 1;
     visibility: visible;
 
-    background-color: #1e1823;
+    background: rgba(73, 75, 50, 0.4);
+
+    transition: opacity var(--standard-transition), visibility var(--standard-transition);
 }
 
 .explore-overlay.is-hidden {
