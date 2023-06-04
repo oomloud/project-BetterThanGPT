@@ -28,7 +28,7 @@
   letter-spacing: -0.02em;
 
   color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  background-color: var(--background-color-theme-light);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -47,6 +47,7 @@
   --slider-marker-color: rgba(17, 17, 17, 0.1);
   --background-color-theme-light: #e2e2e2;
   --background-color-theme-dark: #1e1823;
+  --button-hover-color: #fcf1e0;
 
   /* transitions */
   --standard-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
