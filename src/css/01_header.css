@@ -1,6 +1,7 @@
 .page-header {
   padding-top: 20px;
   padding-bottom: 14px;
+  color: var(--primary-text-color-theme-light);
 }
 
 @media only screen and (min-width: 768px) {
@@ -25,12 +26,10 @@
 .logo {
   display: flex;
   align-items: center;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.03em;
-  color: var(--primary-text-color-theme-light);
+  transition: color var(--standard-transition);
 }
 
 @media only screen and (min-width: 1200px) {
@@ -39,6 +38,11 @@
     font-size: 18px;
     line-height: 1.11;
   }
+}
+
+.logo:hover,
+ .logo:focus {
+color: var(--accent-color);
 }
 
 .logo-accent {
@@ -72,12 +76,8 @@
   }
 
   .header-nav-link {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
-    letter-spacing: -0.02em;
-    color: var(--primary-text-color-theme-light);
     transition: color var(--standard-transition);
   }
 
@@ -93,16 +93,19 @@
     margin-left: auto;
   }
 
+.page-header .social-list-link {
+  transition: color var(--standard-transition);
+}
+
+.page-header .social-list-link:hover,
+.page-header .social-list-link:focus {
+color: var(--accent-color);
+}
+
   .page-header .social-icon {
     display: block;
-    stroke: var(--primary-text-color-theme-light);
+    stroke: currentColor;
     fill: var(--primary-text-color-theme-dark);
-    transition: stroke var(--standard-transition);
-  }
-
-  .social-list-link:hover .social-icon,
-  .social-list-link:focus .social-icon {
-    stroke: var(--accent-color);
   }
 }
 
@@ -233,9 +236,7 @@
   .mobile-nav-link {
     position: relative;
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
-    letter-spacing: -0.02em;
     color: var(--primary-text-color-theme-dark);
     transition: color 500ms ease-out, letter-spacing 500ms ease-out, padding-bottom 500ms ease-out;
   }
