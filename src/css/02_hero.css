@@ -6,7 +6,7 @@
   }
 }
 
-.hero-content {
+.hero-container {
   height: 621px;
   padding: 20px;
   background-image: url(/img/01_hero/hero_img_mobile.jpg);
@@ -15,9 +15,42 @@
   border-radius: 30px;
   border-color: transparent;
   display: flex;
-  flex-direction: column;
-  gap: 32px;
-  justify-content: end;
+  flex-direction: row;
+  align-items: flex-end;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/img/01_hero/hero_img_mobile@2x.jpg);
+  }
+
+  @media only screen and (min-width: 768px) {
+    height: 890px;
+    padding: 40px;
+    background-image: url(/img/01_hero/hero_img_tablet.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/img/01_hero/hero_img_tablet@2x.jpg);
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    height: 600px;
+    background-image: url(/img/01_hero/hero_img_desktop.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/img/01_hero/hero_img_desktop@2x.jpg);
+    }
+  }
+}
+
+.hero-content {
+  width: 100%;
+  position: relative;
 }
 
 .hero-subheader {
@@ -26,8 +59,16 @@
   line-height: 1.2em;
   letter-spacing: -0.03em;
   color: var(--primary-text-color-theme-dark);
+  margin-bottom: 32px;
+
+  @media only screen and (min-width: 768px) {
+    width: 484px;
+    font-size: 28px;
+    line-height: 1.21em;
+  }
 }
 
+/* Container for both buttons */
 .hero-btn-container {
   display: flex;
   flex-direction: row;
@@ -35,14 +76,26 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: start;
+  margin-bottom: 32px;
+
+  @media only screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
+/* Scroll button to footer */
 .hero-scroll {
   display: flex;
   flex-direction: row;
   gap: 14px;
   align-items: center;
-  width: 107px;
+  width: auto;
+
+  @media only screen and (min-width: 768px) {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+  }
 }
 
 .scroll-text {
@@ -52,6 +105,11 @@
   letter-spacing: -0.03em;
   color: var(--primary-text-color-theme-dark);
   transition: color var(--standard-transition);
+
+  @media only screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.29em;
+  }
 }
 
 .hero-scroll-btn {
@@ -67,10 +125,23 @@
   margin-right: auto;
   transition: color var(--standard-transition),
     background-color var(--standard-transition);
+
+  @media only screen and (min-width: 768px) {
+    width: 38px;
+    height: 38px;
+  }
 }
 
 .hero-scroll-svg {
   fill: currentColor;
+
+  @media only screen and (min-width: 768px) {
+    width: 22px;
+    height: 22px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+  }
 }
 
 .hero-scroll:hover .scroll-text,
