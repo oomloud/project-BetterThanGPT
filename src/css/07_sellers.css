@@ -1,0 +1,94 @@
+.topsellers-container {
+  padding-bottom: 72px;
+}
+@media only screen and (min-width: 768px) {
+  .topsellers-container {
+    padding-bottom: 100px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .topsellers-container {
+    padding-bottom: 128px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .topsellers-item {
+    max-width: 344px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .topsellers-item {
+    max-width: 368px;
+    overflow: visible;
+  }
+}
+.topsellers-img {
+  border-radius: 15px;
+}
+.topsellers-text {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  color: var(--primary-text-color-theme-light);
+}
+@media only screen and (min-width: 768px) {
+  .topsellers-text {
+    margin-top: 32px;
+    width: 306px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .topsellers-text {
+    width: 407px;
+  }
+}
+.topsellers-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+}
+@media only screen and (min-width: 768px) {
+  .topsellers-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
+
+.desk-card {
+  display: none;
+}
+@media only screen and (min-width: 1200px) {
+  .desk-card {
+    display: block;
+  }
+}
+
+.buy-btn {
+  display: block;
+  min-width: 120px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min-width: 768px) {
+  .buy-btn {
+    margin-top: 32px;
+    margin-right: 0;
+    height: 50px;
+    min-width: 162px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .buy-btn {
+    position: absolute;
+    right: 0;
+    bottom: 5;
+  }
+  .topsellers-list {
+    position: relative;
+  }
+}
