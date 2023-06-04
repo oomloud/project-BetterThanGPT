@@ -1,6 +1,7 @@
 .page-header {
   padding-top: 20px;
   padding-bottom: 14px;
+  color: var(--primary-text-color-theme-light);
 }
 
 @media only screen and (min-width: 768px) {
@@ -25,12 +26,10 @@
 .logo {
   display: flex;
   align-items: center;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.03em;
-  color: var(--primary-text-color-theme-light);
+  transition: color var(--standard-transition);
 }
 
 @media only screen and (min-width: 1200px) {
@@ -39,6 +38,11 @@
     font-size: 18px;
     line-height: 1.11;
   }
+}
+
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color);
 }
 
 .logo-accent {
@@ -72,12 +76,8 @@
   }
 
   .header-nav-link {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
-    letter-spacing: -0.02em;
-    color: var(--primary-text-color-theme-light);
     transition: color var(--standard-transition);
   }
 
@@ -93,16 +93,19 @@
     margin-left: auto;
   }
 
-  .page-header .social-icon {
-    display: block;
-    stroke: var(--primary-text-color-theme-light);
-    fill: var(--primary-text-color-theme-dark);
-    transition: stroke var(--standard-transition);
+  .page-header .social-list-link {
+    transition: color var(--standard-transition);
   }
 
-  .social-list-link:hover .social-icon,
-  .social-list-link:focus .social-icon {
-    stroke: var(--accent-color);
+  .page-header .social-list-link:hover,
+  .page-header .social-list-link:focus {
+    color: var(--accent-color);
+  }
+
+  .page-header .social-icon {
+    display: block;
+    stroke: currentColor;
+    fill: transparent;
   }
 }
 
@@ -139,6 +142,7 @@
 
   .backdrop {
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
@@ -232,25 +236,44 @@
   .mobile-nav-link {
     position: relative;
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
-    letter-spacing: -0.02em;
     color: var(--primary-text-color-theme-dark);
-    transition: color 500ms ease-out, letter-spacing 500ms ease-out, padding-bottom 500ms ease-out;
+    transition: color 500ms ease-out, letter-spacing 500ms ease-out,
+      padding-bottom 500ms ease-out;
   }
 
   .mobile-nav-link:hover,
   .mobile-nav-link:focus {
     color: var(--accent-color);
     letter-spacing: -0.01em;
-    padding-bottom: 6px;
+  }
+
+  .mobile-nav-link::after {
+    position: absolute;
+    bottom: -5px;
+    content: '';
+    display: block;
+    width: 25px;
+    height: 1px;
+    background-color: var(--accent-color);
+    opacity: 0;
+    transition: opacity 500ms ease-out;
   }
 
   .mobile-nav-item + .mobile-nav-item {
     margin-top: 24px;
+    transition: margin-top 500ms ease-out;
   }
 
-   .mobile-social-list {
+  .mobile-nav-item:hover + .mobile-nav-item {
+    margin-top: 30px;
+  }
+
+.mobile-nav-item:hover .mobile-nav-link::after {
+  opacity: 1;
+}
+
+  .mobile-social-list {
     position: absolute;
     display: flex;
     gap: 18px;
@@ -295,5 +318,3 @@
 }
 
 /* =========================/MOBILE MENU========================= */
-
-
