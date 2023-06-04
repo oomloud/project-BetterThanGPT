@@ -105,7 +105,7 @@
   .page-header .social-icon {
     display: block;
     stroke: currentColor;
-    fill: var(--primary-text-color-theme-dark);
+    fill: transparent;
   }
 }
 
