@@ -22,15 +22,16 @@
     overflow: visible;
   }
 }
+.topsellers-img {
+  border-radius: 15px;
+}
 .topsellers-text {
-  /* font-family: 'Montserrat'; */
   margin-top: 20px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: -0.02em;
   color: var(--primary-text-color-theme-light);
-  /* #111111 */
 }
 @media only screen and (min-width: 768px) {
   .topsellers-text {
@@ -65,15 +66,6 @@
     display: block;
   }
 }
-/* .tablet-desktop-text {
-  display: block;
-  width: 306px;
-}
-@media only screen and (min-width: 1200px) {
-  .tablet-desktop-text {
-    width: 407px;
-  }
-} */
 
 .buy-btn {
   display: block;
