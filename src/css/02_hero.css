@@ -1,8 +1,17 @@
+.hero {
+  padding-bottom: 72px;
+
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 50px;
+  }
+}
+
 .hero-content {
   height: 621px;
   padding: 20px;
   background-image: url(/img/01_hero/hero_img_mobile.jpg);
   background-color: var(--background-color-theme-dark);
+  background-position: center;
   border-radius: 30px;
   border-color: transparent;
   display: flex;

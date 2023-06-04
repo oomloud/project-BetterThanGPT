@@ -49,6 +49,12 @@
   --background-color-theme-dark: #1e1823;
   --button-hover-color: #fcf1e0;
 
+  /* Backdrop color */
+  --backdrop-shadow: linear-gradient(
+    rgba(75, 56, 21, 0.6),
+    rgba(75, 56, 21, 0.6)
+  );
+
   /* transitions */
   --standard-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
