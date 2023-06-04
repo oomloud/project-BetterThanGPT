@@ -1,2 +1,2 @@
-import './mobile_menu';
+// import './mobile_menu';
 import './swiper';
