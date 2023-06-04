@@ -1,76 +1,25 @@
-/* .header {
-  padding: 20px 0;
-} */
-
-/* .nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
-} */
-
-/* .nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
-} */
-
-/* .nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
-} */
-
-/* .container {
-  min-width: 320px;
-  max-width: 428px;
-  padding: 0 16px;
-
-  margin: 0 auto;
-
-  @media only screen and (min-width: 768px) {
-    max-width: 768px;
-  }
-
-  @media only screen and (min-width: 1158px) {
-    max-width: 1158px;
-    padding: 0 15px;
-  }
-} */
 .page-header {
   padding-top: 20px;
   padding-bottom: 14px;
+}
 
-  @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
+  .page-header {
     padding-top: 24px;
     padding-bottom: 24px;
   }
+}
 
-  @media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
+  .page-header {
     padding-top: 24px;
     padding-bottom: 32px;
   }
 }
 
 .header-container {
-  padding-left: 20px;
-  padding-right: 20px;
   display: flex;
   align-items: center;
-
-  @media only screen and (min-width: 375px) {
-    max-width: 375px;
-    margin: 0 auto;
-  }
-
-  @media only screen and (min-width: 768px) {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
-  @media only screen and (min-width: 1200px) {
-    max-width: 1200px;
-  }
 }
 
 .logo {
@@ -82,9 +31,13 @@
   line-height: 1.29;
   letter-spacing: -0.03em;
   color: var(--primary-text-color-theme-light);
+}
 
-  @media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
+  .logo {
     margin-right: 188px;
+    font-size: 18px;
+    line-height: 1.11;
   }
 }
 
@@ -94,6 +47,13 @@
 
 .logo-icon {
   margin-left: 4px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .logo-icon {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .header-nav,
@@ -109,7 +69,6 @@
   .header-nav-list {
     display: flex;
     gap: 24px;
-    margin-right: 137px;
   }
 
   .header-nav-link {
@@ -119,20 +78,39 @@
     line-height: 1.14;
     letter-spacing: -0.02em;
     color: var(--primary-text-color-theme-light);
+    transition: color var(--standard-transition);
+  }
+
+  .header-nav-link:hover,
+  .header-nav-link:focus {
+    color: var(--accent-color);
   }
 
   .page-header .social-list {
     display: flex;
+    margin-left: auto;
     gap: 18px;
+    margin-left: auto;
   }
 
-  .social-icon {
+  .page-header .social-icon {
+    display: block;
     stroke: var(--primary-text-color-theme-light);
     fill: var(--primary-text-color-theme-dark);
+    transition: stroke var(--standard-transition);
+  }
+
+  .social-list-link:hover .social-icon,
+  .social-list-link:focus .social-icon {
+    stroke: var(--accent-color);
   }
 }
 
-/* Додати ховер та фокус */
+@media only screen and (min-width: 1200px) {
+  .mobile-menu-open {
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 1200px) {
   .mobile-menu-open {
@@ -147,10 +125,175 @@
   .mobile-menu-open-icon {
     stroke: var(--primary-text-color-theme-light);
   }
+
+  @media only screen and (min-width: 768px) {
+    .mobile-menu-open-icon {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  /* =========================MOBILE MENU========================= */
+
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    overflow-y: scroll;
+    opacity: 1;
+    transition: opacity var(--standard-transition),
+      visibility 250ms var(--standard-transition);
+  }
+
+  .backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .mobile-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 220px;
+    height: 100%;
+    min-height: 400px;
+    background-color: var(--background-color-theme-dark);
+    transform: translateX(0);
+    transition: transform var(--standard-transition);
+  }
+
+  @media only screen and (min-width: 768px) {
+    .mobile-menu {
+      width: 290px;
+    }
+  }
+
+  .backdrop.is-hidden .mobile-menu {
+    transform: translateX(100);
+  }
+
+  .mobile-menu-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 0;
+    line-height: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: var(--primary-text-color-theme-dark);
+    transform: scale(1);
+    transition: transform 800ms ease-out, color 500ms ease-out;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .mobile-menu-close-btn {
+      top: 24px;
+      right: 32px;
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .mobile-menu-close-btn:hover,
+  .mobile-menu-close-btn:focus {
+    transform: scale(1.43);
+    color: var(--accent-color);
+  }
+
+  @media only screen and (min-width: 768px) {
+    .mobile-menu-close-btn:hover,
+    .mobile-menu-close-btn:focus {
+      transform: scale(1.25);
+    }
+  }
+
+  .mobile-menu-close-icon {
+    stroke: currentColor;
+  }
+
+  .mobile-nav {
+    padding-top: 136px;
+    padding-left: 50px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .mobile-nav {
+      padding-top: 156px;
+      padding-left: 85px;
+    }
+  }
+
+  .mobile-nav-link {
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: var(--primary-text-color-theme-dark);
+    transition: color 500ms ease-out, letter-spacing 500ms ease-out, padding-bottom 500ms ease-out;
+  }
+
+  .mobile-nav-link:hover,
+  .mobile-nav-link:focus {
+    color: var(--accent-color);
+    letter-spacing: -0.01em;
+    padding-bottom: 6px;
+  }
+
+  .mobile-nav-item + .mobile-nav-item {
+    margin-top: 24px;
+  }
+
+   .mobile-social-list {
+    position: absolute;
+    display: flex;
+    gap: 18px;
+    bottom: 20px;
+    left: 20px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .mobile-social-list {
+      bottom: 24px;
+      left: 32px;
+    }
+  }
+
+  .mobile-social-list-link {
+    color: var(--primary-text-color-theme-dark);
+    transition: color 500ms ease-out;
+  }
+
+  .mobile-social-list-link:hover,
+  .mobile-social-list-link:focus {
+    color: var(--accent-color);
+  }
+
+  .mobile-social-icon {
+    display: block;
+    stroke: currentColor;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .mobile-social-icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-  .mobile-menu-open {
+  .backdrop {
     display: none;
   }
 }
+
+/* =========================/MOBILE MENU========================= */
+
+
