@@ -11,9 +11,20 @@
     padding-bottom: 128px;
   }
 }
-
+@media only screen and (min-width: 768px) {
+  .topsellers-item {
+    max-width: 344px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .topsellers-item {
+    max-width: 368px;
+    overflow: visible;
+  }
+}
 .topsellers-text {
   /* font-family: 'Montserrat'; */
+  margin-top: 20px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.28;
@@ -21,10 +32,20 @@
   color: var(--primary-text-color-theme-light);
   /* #111111 */
 }
+@media only screen and (min-width: 768px) {
+  .topsellers-text {
+    margin-top: 32px;
+    width: 306px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .topsellers-text {
+    width: 407px;
+  }
+}
 .topsellers-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   gap: 32px;
 }
@@ -36,19 +57,6 @@
   }
 }
 
-.text-mobile-container,
-.btn-mobile-container {
-  padding-top: 20px;
-}
-@media only screen and (min-width: 768px) {
-  .text-mobile-container {
-    display: none;
-  }
-  .btn-mobile-container {
-    display: none;
-  }
-}
-
 .desk-card {
   display: none;
 }
@@ -57,21 +65,8 @@
     display: block;
   }
 }
-.text-btn-container {
-  display: none;
-}
-@media only screen and (min-width: 768px) {
-  .text-btn-container {
-    display: flex;
-    margin-top: 32px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .text-btn-container {
-    width: px;
-  }
-}
-.tablet-desktop-text {
+
+/* .tablet-desktop-text {
   display: block;
   width: 306px;
 }
@@ -79,18 +74,30 @@
   .tablet-desktop-text {
     width: 407px;
   }
-}
+} */
 
 .buy-btn {
   display: block;
   min-width: 120px;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
 }
 @media only screen and (min-width: 768px) {
   .buy-btn {
+    margin-top: 32px;
     margin-right: 0;
     height: 50px;
     min-width: 162px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .buy-btn {
+    position: absolute;
+    right: 0;
+    bottom: 5;
+  }
+  .topsellers-list {
+    position: relative;
   }
 }
