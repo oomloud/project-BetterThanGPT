@@ -132,6 +132,11 @@
     color: var(--primary-text-color-theme-dark);
 }
 
+.footer-address-list-item:hover,
+.footer-address-list-item:focus {
+    color: var(--accent-color);
+}
+
 .mail {
     width: 164px;
 }
