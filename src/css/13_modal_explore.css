@@ -27,7 +27,7 @@
     border-radius: 15px;
     overflow: hidden;
     background-color: var(--primary-text-color-theme-dark);
-    z-index: 10;
+    z-index: 100;
 }
 
 @media only screen and (min-width: 768px) {
