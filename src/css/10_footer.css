@@ -130,6 +130,7 @@
     text-align: center;
 
     color: var(--primary-text-color-theme-dark);
+    transition: color var(--standard-transition);
 }
 
 .footer-address-list-item:hover,
@@ -178,6 +179,7 @@
 
 .footer-social-icon{
     stroke: var(--primary-text-color-theme-dark) ;
+    transition: stroke var(--standard-transition);
 }
 
 .footer-social-icon:hover,.footer-social-icon:focus{
@@ -223,13 +225,6 @@
     margin-top: 32px;
 }
 
-
-
-.footer-nav-list-item:hover,
-.footer-nav-list-item:focus {
-    color: var(--accent-color);
-}
-
 @media only screen and (min-width: 768px) {
   .footer-nav-list {
     flex-direction: row;
@@ -261,4 +256,10 @@
     align-items: center;
 
     color: var(--primary-text-color-theme-dark);
+    transition: color var(--standard-transition);
+}
+
+.footer-nav-list-item:hover,
+.footer-nav-list-item:focus {
+    color: var(--accent-color);
 }
