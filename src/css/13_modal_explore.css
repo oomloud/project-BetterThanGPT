@@ -1,0 +1,212 @@
+.explore-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: var(--backdrop-shadow);
+    opacity: 1;
+    visibility: visible;
+
+    transition: opacity var(--standard-transition), visibility var(--standard-transition);
+}
+
+.explore-overlay.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.explore-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 311px;
+    height: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: var(--primary-text-color-theme-dark);
+    z-index: 100;
+}
+
+@media only screen and (min-width: 768px) {
+    .explore-modal {
+        width: 538px;
+        height: 412px;
+    }
+}
+
+.explore-modal-img-container {
+    width: 100%;
+    height: 169px;
+    background-image: url(../img/13_modal_explore/explore-section-modal.jpg);
+    background-position: left;
+    background-size: cover;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+    .explore-modal-img-container {
+        height: 196px;
+    }
+}
+
+.explore-modal-text {
+    padding: 32px 24px;
+}
+
+@media only screen and (min-width: 768px) {
+    .explore-modal-text {
+        padding: 40px;
+    }
+}
+
+.explore-modal-text .explore-modal-title {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+    .explore-modal-text .explore-modal-title {
+        font-size: 24px;
+        line-height: 1.17;
+        width: 298px;
+    }
+}
+
+.explore-modal-accent {
+    color: var(--accent-color);
+}
+
+.explore-modal-form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.explore-modal-input {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 18px;
+    padding-right: 108px;
+    height: 45px;
+    width: 100%;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+    border-radius: 25px;
+    outline: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .explore-modal-input {
+        width: 313px;
+        padding: 0 18px;
+        height: 52px;
+    }
+}
+
+
+.explore-modal-input::placeholder {
+    color: var(--color-for-input);
+}
+
+.explore-modal-btn-mobile {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 100px;
+    height: 45px;
+    border-radius: 100px;
+    border: none;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1;
+    background-color: var(--accent-color);
+    color: var(--primary-text-color-theme-dark);
+
+    transition: color var(--standard-transition), background-color var(--standard-transition);
+}
+
+@media only screen and (min-width: 768px) {
+    .explore-modal-btn-mobile {
+        display: none;
+    }
+}
+
+.explore-modal-btn-mobile:hover,
+.explore-modal-btn-mobile:focus {
+    color: var(--accent-color);
+    background-color: #fcf1e0;
+}
+
+.explore-modal-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 137px;
+    height: 52px;
+    outline: none;
+    border: none;
+    border-radius: 100px;
+    background-color: var(--accent-color);
+    color: var(--primary-text-color-theme-dark);
+
+    transition: color var(--standard-transition), background-color var(--standard-transition);
+}
+
+.explore-modal-btn:hover,
+.explore-modal-btn:focus {
+    color: var(--accent-color);
+    background-color: #fcf1e0;
+}
+
+@media only screen and (max-width: 767px) {
+    .explore-modal-btn {
+        display: none;
+    }
+}
+
+.explore-modal-close-btn {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 15px;
+    right: 14px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+
+    transition: background-color var(--standard-transition);
+}
+
+.explore-modal-close-icon {
+    stroke: var(--primary-text-color-theme-dark);
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .explore-modal-close-btn {
+        width: 28px;
+        height: 28px;
+        top: 24px;
+        right: 24px;
+    }
+}
+
+.explore-modal-close-btn:hover,
+.explore-modal-close-btn:focus {
+    background-color: rgba(255, 255, 255, 0.25);
+}

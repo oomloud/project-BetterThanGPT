@@ -1,0 +1,113 @@
+/**
+  |============================
+  | How_its_made
+  |============================
+*/
+.how_its_made {
+  padding-bottom: 72px;
+}
+@media only screen and (min-width: 768px) {
+  .how_its_made {
+    padding-bottom: 100px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .how_its_made {
+    padding-bottom: 128px;
+  }
+}
+
+.how_its_made-container {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: start;
+}
+@media only screen and (min-width: 768px) {
+  .how_its_made-container {
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .how_its_made-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+.section-title {
+}
+@media only screen and (min-width: 1200px) {
+  .title-him {
+    margin-bottom: 50px;
+  }
+}
+.title-made {
+  color: var(--accent-color);
+}
+.how_its_made-img {
+  
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  );
+  border-radius: 15px;
+}
+.how_its_made-title {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  color: var(--primary-text-color-theme-light);
+}
+@media only screen and (min-width: 768px) {
+  .how_its_made-title {
+    margin-bottom: 28px;
+    width: 350px;
+  }
+}
+.how_its_made-list {
+  display: flex;
+  gap: 18px;
+  flex-direction: column;
+  list-style: disc;
+  align-items: start;
+  justify-content: center;
+  padding-left: 16px;
+}
+@media only screen and (min-width: 768px) {
+  .how_its_made-list {
+    width: 550px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .how_its_made-list {
+    gap: 24px;
+    width: 452px;
+    padding-right: 27px;
+  }
+}
+.how_its_made-iteam {
+}
+@media only screen and (min-width: 768px) {
+  .how_its_made-iteam {
+    max-width: 464px;
+  }
+}
+.how_its_made-text {
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--primary-text-color-theme-light);
+}
+.try-chocolates {
+  padding: 20px 14px;
+  background-color: var(--primary-text-color-theme-dark);
+  border-radius: 15px;
+}
+@media only screen and (min-width: 768px) {
+  .try-chocolates {
+    padding: 32px;
+    max-width: 614px;
+  }
+}
+
