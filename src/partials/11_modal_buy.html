@@ -40,11 +40,11 @@
             <ul class="buy-list-personal">
                 <li class="buy-item-personal">
                     <input class="buy-modal-form-input" type="text" name="username" id="modal-name"
-                        placeholder="Name">
+                        placeholder="Name" pattern="\D{1,}">
                 </li>
                 <li class="buy-item-personal">
                     <input class="buy-modal-form-input" type="text" name="usersurname"
-                        id="modal-surname" placeholder="Surname">
+                        id="modal-surname" placeholder="Surname" pattern="\D{1,}">
                 </li>
             </ul>
             <label class="buy-modal-label" for="modal-email">Email</label>
@@ -66,7 +66,7 @@
             <label class="buy-modal-label" for="modal-card">Card number</label>
             <div class="buy-modal-form-area">
                 <input class="buy-modal-form-input buy-mastercard" type="number" name="userphon"
-                    id="modal-card" placeholder="Enter card">
+                    id="modal-card" placeholder="Enter card" pattern="\d{16}">
                 <svg class="buy-modal-form-icon buy-icon-mastercard">
                     <use href="../img/icons.svg#icon-mastercard"></use>
                 </svg>
