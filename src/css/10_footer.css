@@ -186,6 +186,7 @@
 
 .footer-social-icon{
     stroke: var(--primary-text-color-theme-dark) ;
+    fill: transparent;
     transition: stroke var(--standard-transition);
 }
 
