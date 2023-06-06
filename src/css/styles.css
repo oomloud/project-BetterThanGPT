@@ -5,6 +5,8 @@
   |============================
 */
 @import url('./reset.css');
+@import url('./fonts.css');
+
 /* Partials */
 @import url('./01_header.css');
 @import url('./02_hero.css');
