@@ -11,7 +11,8 @@
                 <img class="img-styles"
                     srcset="../img/modal_buy/img_mob@1x-1.png 1x, ../img/modal_buy/img_mob@2x-1.png 2x"
                     src="../img/modal_buy/img_mob@1x-1.png"
-                    alt="kisspng-chocolate-bar-kinder-chocolate-white-chocolate-chocolate-nuts" />
+                    alt="kisspng-chocolate-bar-kinder-chocolate-white-chocolate-chocolate-nuts"
+                    loading="lazy" />
                 <div class="buy-card-dose">
                     <p class="buy-card-text">100 g</p>
                 </div>
@@ -20,7 +21,8 @@
                 <img class="img-styles"
                     srcset="../img/modal_buy/img_mob@1x-2.png 1x, ../img/modal_buy/img_mob@2x-2.png 2x"
                     src="../img/modal_buy/img_mob@1x-2.png"
-                    alt="kisspng-chocolate-bar-praline-kinder-chocolate-bonbon-milk" />
+                    alt="kisspng-chocolate-bar-praline-kinder-chocolate-bonbon-milk"
+                    loading="lazy" />
                 <div class="buy-card-dose">
                     <p class="buy-card-text">200 g</p>
                 </div>
@@ -29,7 +31,7 @@
                 <img class="img-styles"
                     srcset="../img/modal_buy/img_mob@1x-3.png 1x, ../img/modal_buy/img_mob@2x-3.png 2x"
                     src="../img/modal_buy/img_mob@1x-3.png"
-                    alt="transparent-chocolate-bar-dark-chocolate" />
+                    alt="transparent-chocolate-bar-dark-chocolate" loading="lazy" />
                 <div class="buy-card-dose">
                     <p class="buy-card-text">300 g</p>
                 </div>
@@ -50,12 +52,14 @@
             <label class="buy-modal-label" for="modal-email">Email</label>
             <div class="buy-modal-form-area">
                 <input class="buy-modal-form-input" type="email" name="email" id="modal-email"
-                    placeholder="Enter your email">
+                    placeholder="Enter your email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
             </div>
             <label class="buy-modal-label" for="modal-phone">Phone number</label>
             <div class="buy-modal-form-area">
-                <input class="buy-modal-form-input buy-phon" type="tel" name="userphon"
-                    id="modal-phone" placeholder="Phone number" pattern="\d{9}">
+                <input class="buy-modal-form-input buy-phon" type="tel" inputmode="numeric"
+                    pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" name="userphon"
+                    id="modal-phone" placeholder="Phone number">
                 <div class="buy-flag-phon">
                     <svg class="buy-modal-form-icon buy-icon-flag">
                         <use href="../img/icons.svg#icon-flag-ua"></use>
