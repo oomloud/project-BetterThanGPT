@@ -21,10 +21,6 @@ const swiper = new Swiper('.swiper', {
       spaceBetween: 18
     }
   },
-    // mouse wheel scrolling
-    mousewheel: {
-    invert: true,
-  },
 
   // If we need pagination
   pagination: {
