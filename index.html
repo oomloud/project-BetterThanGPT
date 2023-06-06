@@ -22,19 +22,793 @@
 </head>
 
 <body>
-  ENOENT: no such file or directory, open '/home/runner/work/project-BetterThanGPT/project-BetterThanGPT/src/partials /01_header.html'
-  ENOENT: no such file or directory, open '/home/runner/work/project-BetterThanGPT/project-BetterThanGPT/src/partials /02_hero.html'
-  ENOENT: no such file or directory, open '/home/runner/work/project-BetterThanGPT/project-BetterThanGPT/src/partials /03_advantages.html'
-  ENOENT: no such file or directory, open '/home/runner/work/project-BetterThanGPT/project-BetterThanGPT/src/partials /04_components.html'
-  ENOENT: no such file or directory, open '/home/runner/work/project-BetterThanGPT/project-BetterThanGPT/src/partials /05_how_its_made.html'
-  ENOENT: no such file or directory, open '/home/runner/work/project-BetterThanGPT/project-BetterThanGPT/src/partials /06_products.html'
-  ENOENT: no such file or directory, open '/home/runner/work/project-BetterThanGPT/project-BetterThanGPT/src/partials /07_sellers.html'
-  ENOENT: no such file or directory, open '/home/runner/work/project-BetterThanGPT/project-BetterThanGPT/src/partials /08_reviews.html'
-  ENOENT: no such file or directory, open '/home/runner/work/project-BetterThanGPT/project-BetterThanGPT/src/partials /09_subscribe.html'
-  ENOENT: no such file or directory, open '/home/runner/work/project-BetterThanGPT/project-BetterThanGPT/src/partials /10_footer.html'
-  ENOENT: no such file or directory, open '/home/runner/work/project-BetterThanGPT/project-BetterThanGPT/src/partials /11_modal_buy.html'
-  ENOENT: no such file or directory, open '/home/runner/work/project-BetterThanGPT/project-BetterThanGPT/src/partials /12_modal_review.html'
-  ENOENT: no such file or directory, open '/home/runner/work/project-BetterThanGPT/project-BetterThanGPT/src/partials /13_modal_explore.html'
+  <header class="page-header" id="header">
+  <div class="container header-container">
+    <a href="./index.html" class="logo">
+      <span class="logo-accent">SIMPLY</span>&nbsp;CHOCOLATE
+      <svg class="logo-icon" width="21" height="21">
+        <use href="/project-BetterThanGPT/assets/icons-675917b8.svg#icon-chocolate-logo"></use>
+      </svg>
+    </a>
+
+    <nav class="header-nav">
+      <ul class="header-nav-list list">
+        <li class="header-nav-item">
+          <a href="#header" class="header-nav-link link">Home</a>
+        </li>
+
+        <li class="header-nav-item">
+          <a href="#how-its-made" class="header-nav-link link"
+            >How it's made?</a
+          >
+        </li>
+
+        <li class="header-nav-item">
+          <a href="#ourproducts" class="header-nav-link link">Our products</a>
+        </li>
+
+        <li class="header-nav-item">
+          <a href="#topsellers" class="header-nav-link link">Top sellers</a>
+        </li>
+
+        <li class="header-nav-item">
+          <a href="#chocolateisloved" class="header-nav-link link"
+            >Chocolate is loved</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="social-list">
+      <li class="social-list-item">
+        <a
+          href="https://www.instagram.com/"
+          class="social-list-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg class="social-icon" width="24" height="24">
+            <use href="/project-BetterThanGPT/assets/icons-675917b8.svg#icon-ig"></use>
+          </svg>
+        </a>
+      </li>
+
+      <li class="social-list-item">
+        <a
+          href="https://twitter.com/"
+          class="social-list-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg class="social-icon" width="24" height="24">
+            <use href="/project-BetterThanGPT/assets/icons-675917b8.svg#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <button class="mobile-menu-open" data-mobile-menu-open type="button">
+      <svg class="mobile-menu-open-icon" width="28" height="28">
+        <use href="/project-BetterThanGPT/assets/icons-675917b8.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
+
+  <!-- =========================MOBILE MENU========================= -->
+
+  <div class="backdrop is-hidden" data-mobile-menu>
+    <div class="mobile-menu">
+      <button
+        class="mobile-menu-close-btn"
+        data-mobile-menu-close
+        type="button"
+      >
+        <svg class="mobile-menu-close-icon" width="28" height="28">
+          <use href="/project-BetterThanGPT/assets/icons-675917b8.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="mobile-nav">
+        <ul class="mobile-nav-list list">
+          <li class="mobile-nav-item">
+            <a href="#home" class="mobile-nav-link link">Home</a>
+          </li>
+
+          <li class="mobile-nav-item">
+            <a href="#how-its-made" class="mobile-nav-link link"
+              >How it's made?</a
+            >
+          </li>
+
+          <li class="mobile-nav-item">
+            <a href="#ourproducts" class="mobile-nav-link link">Our products</a>
+          </li>
+
+          <li class="mobile-nav-item">
+            <a href="#topsellers" class="mobile-nav-link link">Top sellers</a>
+          </li>
+
+          <li class="mobile-nav-item">
+            <a href="#chocolateisloved" class="mobile-nav-link link"
+              >Chocolate is loved</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="mobile-social-list">
+        <li class="social-list-item">
+          <a
+            href="https://www.instagram.com/"
+            class="mobile-social-list-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="mobile-social-icon" width="22" height="22">
+              <use href="/project-BetterThanGPT/assets/icons-675917b8.svg#icon-ig"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="mobile-social-list-item">
+          <a
+            href="https://twitter.com/"
+            class="mobile-social-list-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="mobile-social-icon" width="22" height="22">
+              <use href="/project-BetterThanGPT/assets/icons-675917b8.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- =========================/MOBILE MENU========================= -->
+</header>
+
+  <section class="hero">
+  <div class="container">
+    <!-- Container for all the content inside the section-->
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="visually-hidden">Hero</h1>
+        <h2 class="hero-subheader">Treat yourself or a loved one
+          to our finest ingredients for a moment of pure delight!</h2>
+        <!-- Container for buttons -->
+        <div class="hero-btn-container">
+          <button class="btn-basic btn-fill" data-modal="1">Buy now</button>
+          <a href="#how_its_made" class="btn-basic btn-outline-dark">How it’s made</a>
+        </div>
+        <a href="#footer" class="hero-scroll">
+          <p class="scroll-text">scroll now</p>
+          <div class="hero-scroll-btn">
+            <svg class="hero-scroll-svg" height="22" width="22">
+              <use href="/project-BetterThanGPT/assets/icons-675917b8.svg#icon-scroll-down"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="advantages">
+  <div class="container advantages-container">
+    <h2 class="visually-hidden">Advantages</h2>
+    <ul class="advantages-list">
+      <li class="advantages-item">
+        <div class="advantages-icon-item">
+          <svg class="advantages-icon" width="32" height="32">
+            <use href="/project-BetterThanGPT/assets/icons-675917b8.svg#icon-chocolate"></use>
+          </svg>
+        </div>
+        <h3 class="advantages-title">Unsurpassed taste</h3>
+        <p class="advantages-text">
+          Crafted with the finest quality cocoa beans and a dedication to
+          perfection, each bite is a decadent experience that simply cannot be
+          matched. Savor the richness and complexity of our Unsurpassed Taste
+          and discover a new level of chocolate bliss.
+        </p>
+      </li>
+      <li class="advantages-item">
+        <div class="advantages-icon-item">
+          <svg class="advantages-icon" width="32" height="32">
+            <use href="/project-BetterThanGPT/assets/icons-675917b8.svg#icon-coin"></use>
+          </svg>
+        </div>
+
+        <h3 class="advantages-title">Affordable price</h3>
+        <p class="advantages-text">
+          Indulge in high-quality chocolate without breaking the bank with
+          Simply Chocolate's selection of affordable treats. Enjoy
+          mouth-watering truffles and velvety chocolate bars without sacrificing
+          taste or quality. Browse our selection and indulge in affordable
+          luxury today.
+        </p>
+      </li>
+      <li class="advantages-item">
+        <div class="advantages-icon-item">
+          <svg class="advantages-icon" width="32" height="32">
+            <use href="/project-BetterThanGPT/assets/icons-675917b8.svg#icon-spoon"></use>
+          </svg>
+        </div>
+        <h3 class="advantages-title">Own production</h3>
+        <p class="advantages-text">
+          We take pride in our own production process, ensuring that every step
+          is carefully crafted to perfection. From selecting the finest
+          ingredients to handcrafting each piece, our attention to detail is
+          evident in every bite.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+  <!--section 4 components-->
+
+<section class="section-components">
+  <div class="container components-container">
+    <div class="components-header-pos">
+      <h2 class="components-header">
+        IT ALL ADDS UP TO ONE EXCEPTIONAL<span
+          class="components-header accent-text"
+          > TASTE </span
+        > SENSATION
+      </h2>
+      <p class="text-components-header">
+        At Simply Chocolate, we believe that the secret to exceptional chocolate
+        is in the details. From the sourcing of the finest ingredients to the
+        careful crafting of each individual piece, every step of our process
+        adds up to one exceptional taste sensation.
+      </p>
+    </div>
+    <ul class="components-list list">
+      <li class="components-link-1 link-comp">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                srcset="/project-BetterThanGPT/assets/mob1@1x-3d8074c2.avif 224w, /project-BetterThanGPT/assets/mob1@2x-034ae64b.avif 448w, /project-BetterThanGPT/assets/mob1@1x-3d8074c2.avif 224w, /project-BetterThanGPT/assets/mob1@2x-034ae64b.avif 448w, /project-BetterThanGPT/assets/des1@1x-3a394961.avif 206w, /project-BetterThanGPT/assets/des1@2x-fdf603ae.avif 412w"
+                sizes="(min-width: 1200px) 206px, (min-width: 768px) 224px, 224px"
+                src="/project-BetterThanGPT/assets/des1@1x-3a394961.avif"
+                loading="lazy"
+                alt="mILK CHOCOLATE"
+                class="image"
+              />
+              <div class="components-name-card">
+                <p class="components-title-2">MILK CHOCOLATE</p>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <ul class="components-ingredients">
+                <li class="components-name">
+                  <p>MILK CHOCOLATE</p>
+                </li>
+                <ul class="components-ingredients-list">
+                  <li class="components-product">
+                    <p>chocolate</p>
+                  </li>
+                  <li class="components-benefits cards">
+                    <p>the benefits</p>
+                  </li>
+                </ul>
+                <li class="components-stock">
+                  <p>
+                    Milk chocolate is a solid chocolate confectionery containing
+                    cocoa, sugar and milk. It is the most consumed type of
+                    chocolate. Chocolate was originally sold and consumed as a
+                    beverage in pre-Columbian times. Although four-fifths of all
+                    milk chocolate is sold in the United States and Europe.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="components-link-2 link-comp">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                srcset="/project-BetterThanGPT/assets/mob2@1x-d99727e9.avif 224w, /project-BetterThanGPT/assets/mob2@2x-15de0321.avif 448w, /project-BetterThanGPT/assets/mob2@1x-d99727e9.avif 224w, /project-BetterThanGPT/assets/mob2@2x-15de0321.avif 448w, /project-BetterThanGPT/assets/des2@2x-d6f2f75c.avif 412w
+ /img/04components/des2@1x.avif 206w"
+                sizes="(min-width: 1200px) 206px, (min-width: 768px) 224px, 224px"
+                src="/project-BetterThanGPT/assets/des2@1x-fa6c8a1d.avif"
+                loading="lazy"
+                alt="mILK"
+                class="image"
+              />
+              <div class="components-name-card">
+                <p class="components-title-1">MILK</p>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <ul class="components-ingredients">
+                <li class="components-name">
+                  <p>MILK</p>
+                </li>
+                <ul class="components-ingredients-list">
+                  <li class="components-product">
+                    <p>milk</p>
+                  </li>
+                  <li class="components-benefits cards">
+                    <p>the benefits</p>
+                  </li>
+                </ul>
+                <li class="components-stock ell-1">
+                  <p>
+                    Milk is a white liquid food produced by the mammary glands
+                    of mammals. It is the primary source of nutrition for young
+                    mammals (including breastfed human infants) before they are
+                    able to digest solid food.Early-lactation milk, which is
+                    called colostrum, contains antibodies that strengthen the
+                    immune system..
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="components-link-3 link-comp">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                srcset="/project-BetterThanGPT/assets/mob3@1x-b4dd067d.avif 224w, /project-BetterThanGPT/assets/mob3@2x-88dc9ec0.avif 448w, /project-BetterThanGPT/assets/tab3@1x-6873fdb6.avif 224w, /project-BetterThanGPT/assets/tab3@2x-c4cc01c3.avif 448w, /project-BetterThanGPT/assets/des3@1x-8eae7449.avif 206w, /project-BetterThanGPT/assets/des3@2x-fb77861f.avif 412w"
+                sizes="(min-width: 1200px) 206px, (min-width: 768px) 224px, 224px"
+                src="/project-BetterThanGPT/assets/des3@1x-8eae7449.avif"
+                loading="lazy"
+                alt="nuts"
+                class="image"
+              />
+              <div class="components-name-card">
+                <p class="components-title-2">NUTS</p>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <ul class="components-ingredients">
+                <li class="components-name">
+                  <p>NUTS</p>
+                </li>
+                <ul class="components-ingredients-list">
+                  <li class="components-product">
+                    <p>nuts</p>
+                  </li>
+                  <li class="components-benefits cards">
+                    <p>the benefits</p>
+                  </li>
+                </ul>
+                <li class="components-stock ell-1">
+                  <p>
+                    Almonds, pistachios, and walnuts are some types of nuts that
+                    contain healthy nutrients. When eaten as part of a
+                    nutrient-dense diet, these 9 nuts may offer benefits such as
+                    reducing your risk of heart disease. They’re a good source
+                    of fiber, healthy fats, and plant protein. Plus, they’re
+                    great on their own.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="components-link-4 link-comp">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                srcset="/project-BetterThanGPT/assets/mob4@1x-326b6d27.avif 224w, /project-BetterThanGPT/assets/mob4@2x-b1b5eaf8.avif 448w, /project-BetterThanGPT/assets/mob4@1x-326b6d27.avif 224w, /project-BetterThanGPT/assets/mob4@2x-b1b5eaf8.avif 448w, /project-BetterThanGPT/assets/des4@1x-efe4edc4.avif 206w, /project-BetterThanGPT/assets/des4@2x-cbb9acc3.avif 412w"
+                sizes="(min-width: 1200px) 206px, (min-width: 768px) 224px, 224px"
+                src="/project-BetterThanGPT/assets/des4@1x-efe4edc4.avif"
+                loading="lazy"
+                alt="sweet chocolate"
+                class="image"
+              />
+              <div class="components-name-card">
+                <p class="components-title-1">SEMI - SWEET CHOCOLATEE</p>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <ul class="components-ingredients">
+                <li class="components-name">
+                  <p>SEMI - SWEET CHOCOLATEE</p>
+                </li>
+                <ul class="components-ingredients-list">
+                  <li class="components-product">
+                    <p>sweet chocolate</p>
+                  </li>
+                  <li class="components-benefits cards">
+                    <p>the benefits</p>
+                  </li>
+                </ul>
+                <li class="components-stock ell-2">
+                  <p>
+                    Semi-sweet chocolate has a cocoa solid content of 35 to 65%.
+                    One of the best ways to gain an understanding of this type
+                    of chocolate is to compare it to a different type of
+                    chocolate. Semisweet is darker than milk chocolate. In a
+                    taste comparison, it has a slightly bitter taste whereas
+                    milk chocolate is sweeter.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+  <!-- How-its-made -->
+<section class="how_its_made">
+    <h2 class="section-title title-him" id="how-its-made">hOW IT'S<span class="title-made"> made?</span></h2>
+    <div class="how_its_made-container container">
+        <picture>
+            <!-- Desktop -->
+            <source
+            media="(min-width: 1200px)"
+            srcset="/project-BetterThanGPT/assets/image_desk@1x-e33931bb.jpg 1x, /project-BetterThanGPT/assets/image_desk@2x-828c88ca.jpg 2x"
+            />
+            <!-- Tablet -->
+            <source
+            media="(min-width: 768px)"
+            srcset="/project-BetterThanGPT/assets/image_tab@1x-058ec5a6.jpg 1x, /project-BetterThanGPT/assets/image_tab@2x-c6ee0f25.jpg 2x"
+            type="image/jpg"
+            />
+            <!-- Mobile -->
+            <source
+            media="(max-width: 767px)"
+            srcset="/project-BetterThanGPT/assets/image_mob@1x-ffe7ac0b.jpg 1x, /project-BetterThanGPT/assets/image_mob@2x-c7f32097.jpg 2x"
+            type="image/jpg"
+            />
+            <img 
+            class="how_its_made-img" 
+            src="/project-BetterThanGPT/assets/image-b8ff9c11.jpg" 
+            alt="chocolate"
+            width="614px"
+            height="400px"
+            loading="lazy"
+            />
+        </picture>
+        <div class="try-chocolates">
+            <h3 class="how_its_made-title">Try  our chocolates today and discover the perfect balance of flavor</h3>
+            <ul class="how_its_made-list">
+                <li class="how_its_made-iteam">
+                    <p class="how_its_made-text">Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.</p>
+                </li>
+                <li class="how_its_made-iteam">
+                    <p class="how_its_made-text">At the same time, prepare a water bath. Melt the butter on it.</p>
+                </li>
+                <li class="how_its_made-iteam">
+                    <p class="how_its_made-text">"Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes uniform and silky.</p>
+                </li>
+                <li class="how_its_made-iteam">
+                    <p class="how_its_made-text">Heat the mixture over low heat, letting it barely boil.</p>
+                </li>
+                <li class="how_its_made-iteam">
+                    <p class="how_its_made-text">Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+  <section class="section-slide" id="#ourproducts">
+  <div class="container">
+    <h2 class="section-title section-title-position">
+      OUR
+      <span class="section-title-first">PRODUCTS</span>
+    </h2>
+
+    <div class="swiper mySwiper">
+      <!-- Additional required wrapper -->
+      <ul class="swiper-wrapper list">
+        <!-- Slides -->
+        <li class="swiper-slide slide-position">
+          <img
+            class="slide-img"
+            srcset="/project-BetterThanGPT/assets/choco1-2091b6a4.jpg x1, /project-BetterThanGPT/assets/choco1@2x-c72b830b.jpg x2"
+            src="/project-BetterThanGPT/assets/choco1-2091b6a4.jpg"
+            alt="Dark chocolate"
+          />
+          <div class="discription-slide-position">
+            <h3 class="slide-title">ORANGE</h3>
+            <p class="slide-discription">Dark chocolate</p>
+          </div>
+          <button class="slide-btn" type="button">45 UAH</button>
+        </li>
+        <li class="swiper-slide slide-position">
+          <img
+            class="slide-img"
+            srcset="/project-BetterThanGPT/assets/choco2-8a59e8f0.jpg x1, /project-BetterThanGPT/assets/choco2@2x-22b278e5.jpg x2"
+            src="/project-BetterThanGPT/assets/choco2-8a59e8f0.jpg"
+            alt="Milk chocolate with APPLE&amp;CRANBERRY"
+          />
+          <div class="discription-slide-position">
+            <h3 class="slide-title">APPLE&amp;CRANBERRY</h3>
+            <p class="slide-discription">Milk chocolate</p>
+          </div>
+          <button class="slide-btn" type="button">50 UAH</button>
+        </li>
+        <li class="swiper-slide slide-position">
+          <img
+            class="slide-img"
+            srcset="/project-BetterThanGPT/assets/choco3-f4aaa6ab.jpg x1, /project-BetterThanGPT/assets/choco3@2x-2fed97d8.jpg x2"
+            src="/project-BetterThanGPT/assets/choco3-f4aaa6ab.jpg"
+            alt="Dark chocolate with lime&amp;sea salt"
+          />
+          <div class="discription-slide-position">
+            <h3 class="slide-title">LIME&amp;SEA SALT</h3>
+            <p class="slide-discription">Dark chocolate</p>
+          </div>
+          <button class="slide-btn" type="button">60 UAH</button>
+        </li>
+        <li class="swiper-slide slide-position">
+          <img
+            class="slide-img"
+            srcset="/project-BetterThanGPT/assets/choco4-7ac12f0f.jpg x1, /project-BetterThanGPT/assets/choco4@2x-3d84ed0e.jpg x2"
+            src="/project-BetterThanGPT/assets/choco4-7ac12f0f.jpg"
+            alt="Dark chocolate with pineapple"
+          />
+          <div class="discription-slide-position">
+            <h3 class="slide-title">PINEAPPLE</h3>
+            <p class="slide-discription">Dark chocolate</p>
+          </div>
+          <button class="slide-btn" type="button">54 UAH</button>
+        </li>
+        <li class="swiper-slide slide-position">
+          <img
+            class="slide-img"
+            srcset="/project-BetterThanGPT/assets/choco5-217d7206.jpg x1, /project-BetterThanGPT/assets/choco5@2x-7eb293a2.jpg x2"
+            src="/project-BetterThanGPT/assets/choco5-217d7206.jpg"
+            alt="Milk chocolate"
+          />
+          <div class="discription-slide-position">
+            <h3 class="slide-title">CLASSIC</h3>
+            <p class="slide-discription">Milk chocolate</p>
+          </div>
+          <button class="slide-btn" type="button">45 UAH</button>
+        </li>
+        <li class="swiper-slide slide-position">
+          <img
+            class="slide-img"
+            srcset="/project-BetterThanGPT/assets/choco6-195309e5.jpg x1, /project-BetterThanGPT/assets/choco6@2x-46ae3537.jpg x2"
+            src="/project-BetterThanGPT/assets/choco6-195309e5.jpg"
+            alt="Milk chocolate with honey"
+          />
+          <div class="discription-slide-position">
+            <h3 class="slide-title">HONEY</h3>
+            <p class="slide-discription">Milk chocolate</p>
+          </div>
+          <button class="slide-btn" type="button">50 UAH</button>
+        </li>
+        <li class="swiper-slide slide-position">
+          <img
+            class="slide-img"
+            srcset="/project-BetterThanGPT/assets/choco7-fcb6f1cb.jpg x1, /project-BetterThanGPT/assets/choco7@2x-b986f811.jpg x2"
+            src="/project-BetterThanGPT/assets/choco7-fcb6f1cb.jpg"
+            alt="Dark chocolate with Roasted fruits"
+          />
+          <div class="discription-slide-position">
+            <h3 class="slide-title">ROASTED FRUITS</h3>
+            <p class="slide-discription">Dark chocolate</p>
+          </div>
+          <button class="slide-btn" type="button">66 UAH</button>
+        </li>
+        <li class="swiper-slide slide-position">
+          <img
+            class="slide-img"
+            srcset="/project-BetterThanGPT/assets/choco8-d1340714.jpg x1, /project-BetterThanGPT/assets/choco8@2x-48e6df49.jpg x2"
+            src="/project-BetterThanGPT/assets/choco8-d1340714.jpg"
+            alt="White chocolate"
+          />
+          <div class="discription-slide-position">
+            <h3 class="slide-title">CLASSIC</h3>
+            <p class="slide-discription">White chocolate</p>
+          </div>
+          <button class="slide-btn" type="button">54 UAH</button>
+        </li>
+      </ul>
+      <!-- If we need pagination -->
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<!-- SWIPER -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Top sellers -->
+<section id="topsellers" class="section">
+  <div class="topsellers-container container">
+    <h2 class="section-title"><span class="accent-text">Top</span> Sellers</h2>
+    <div class="sellers-images-wrapper">
+      <ul class="topsellers-list">
+        <li class="topsellers-item">
+          <picture>
+            <source
+              srcset="/project-BetterThanGPT/assets/img1-desk@1x-929f9c86.jpg 1x, /project-BetterThanGPT/assets/img1-desk@2x-72b72adf.jpg 2x"
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="/project-BetterThanGPT/assets/img1-tab@1x-e4582493.jpg 1x, /project-BetterThanGPT/assets/img1-tab@2x-2f2574d2.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/project-BetterThanGPT/assets/img1-mob@1x-5904e7ba.jpg 1x, /project-BetterThanGPT/assets/img1-mob@2x-03b7138e.jpg 2x"
+              media="(min-width: 375px)"
+            />
+
+            <img
+              class="topsellers-img"
+              src="/project-BetterThanGPT/assets/img1-mob@1x-5904e7ba.jpg"
+              alt="chocolate cacao beans and nut"
+            />
+          </picture>
+          <p class="topsellers-text">
+            Crazy enough chocolate originates from a bean just like the coffee
+            bean called Cacao. Cacao has been around for thousands of years and
+            was first discovered by the Native American tribe called the Mayans.
+          </p>
+        </li>
+        <li class="topsellers-item">
+          <picture>
+            <source
+              srcset="/project-BetterThanGPT/assets/img2-desk@1x-3832478a.jpg 1x, /project-BetterThanGPT/assets/img2-desk@2x-47fed82e.jpg 2x"
+              media="(min-width: 1200px)" />
+            <source
+              srcset="/project-BetterThanGPT/assets/img2-tab@1x-c3cc5d0d.jpg 1x, /project-BetterThanGPT/assets/img2-tab@2x-82e429be.jpg 2x"
+              media="(min-width: 768px)" />
+            <source
+              srcset="/project-BetterThanGPT/assets/img2-mob@1x-f0b33029.jpg 1x, /project-BetterThanGPT/assets/img2-mob@2x-b8186933.jpg 2x"
+              media="(min-width: 375px)" />
+            <img
+              class="topsellers-img"
+              src="/project-BetterThanGPT/assets/img2-mob@1x-f0b33029.jpg"
+              alt="chocolate with nuts"
+          /></picture>
+          <button
+            class="buy-btn btn-basic btn-fill"
+            type="button"
+            data-modal-open
+          >
+            Buy now
+          </button>
+        </li>
+        <li class="topsellers-item desk-card">
+          <img
+            class="topsellers-img"
+            srcset="/project-BetterThanGPT/assets/img3-desk@2x-3af74369.jpg 2x"
+            src="/project-BetterThanGPT/assets/img3-desk@1x-3c1c7cc9.jpg"
+            alt="dark chocolate"
+          />
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  
+  <section class="subscribe">
+  <div class="subscribe-container">
+    <h2 class="subscribe-title">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
+    <p class="subscribe-text">
+      From the velvety texture to the rich and complex flavor, our New Chocolate
+      is a true indulgence that will leave you craving more. Made with only the
+      finest ingredients and handcrafted with the utmost care, each piece is a
+      work of art that is sure to please.
+    </p>
+    <button
+      class="subscribe-btn btn-fill"
+      type="button"
+      id="js-open-modal"
+      data-modal-open
+    >
+      Subscribe
+    </button>
+  </div>
+</section>
+
+  <footer class="footer" id="footer">
+    <div class="container footer-container">
+        <h2 class="footer-title"> <span class="footer-title-span">Chocolate</span>
+            a delicious cure for a bad day</h2>
+        <div class="footer-contacts">
+            <p class="footer-contacts-title">Contact us</p>
+            <address class="footer-address">
+                <ul class="footer-address-list list">
+                    <li class="footer-address-list-item link">
+                        <a class="footer-address-list-link link" href="tel:+380684439426">+380 (68) 443-94-26</a>
+                    </li>
+                    <li class="footer-address-list-item mail">
+                        <a class="footer-address-list-link link"
+                            href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
+        <div class="footer-social">
+            <ul class="footer-social-list list">
+                <li class="footer-social-list-item">
+                    <a class="footer-social-link link" href="https://www.instagram.com/">
+                        <svg class="footer-social-icon" width="22" height="22">
+                            <use href="/project-BetterThanGPT/assets/icons-675917b8.svg#icon-ig"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-social-list-item">
+                    <a class="footer-social-link link" href="https://twitter.com/">
+                        <svg class="footer-social-icon" width="22" height="22">
+                            <use href="/project-BetterThanGPT/assets/icons-675917b8.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <nav class="footer-nav">
+            <ul class="footer-nav-list list">
+                <li class="footer-nav-list-item">
+                    <a href="#header" class="footer-nav-link link">Home</a>
+                </li>
+
+                <li class="footer-nav-list-item">
+                    <a href="#how-its-made" class="footer-nav-link link">How it's made?</a>
+                </li>
+
+                <li class="footer-nav-list-item">
+                    <a href="#ourproducts" class="footer-nav-link link">Our products</a>
+                </li>
+
+                <li class="footer-nav-list-item">
+                    <a href="#topsellers" class="footer-nav-link link">Top sellers</a>
+                </li>
+
+                <li class="footer-nav-list-item">
+                    <a href="#chocolateisloved" class="footer-nav-link link">Chocolate is loved</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+  
+  
+  <div class="explore-overlay is-hidden" id="js-overlay-modal" data-modal>
+  <div class="explore-modal">
+    <button
+      class="explore-modal-close-btn"
+      type="button"
+      id="js-modal-close"
+      data-modal-close
+    >
+      <svg class="explore-modal-close-icon" width="24" height="24">
+        <use
+          href="/project-BetterThanGPT/assets/icons-675917b8.svg#icon-close"
+        ></use>
+      </svg>
+    </button>
+    <div class="explore-modal-img-container"></div>
+    <div class="explore-modal-text">
+      <h2 class="section-title explore-modal-title">
+        Explore our
+        <span class="explore-modal-accent">new chocolate</span> first!
+      </h2>
+      <form class="explore-modal-form">
+        <input
+          class="explore-modal-input"
+          type="email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          placeholder="Enter your email"
+        />
+        <button class="explore-modal-btn-mobile" type="submit">Submit</button>
+        <button class="explore-modal-btn" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</div>
+
 
   
 
