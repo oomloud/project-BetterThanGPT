@@ -17,8 +17,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap"
     rel="stylesheet" />
   <title>Simply Chocolate — Main</title>
-  <script type="module" crossorigin src="/project-BetterThanGPT/assets/index-06674134.js"></script>
-  <link rel="stylesheet" href="/project-BetterThanGPT/assets/index-7bbe1632.css">
+  <script type="module" crossorigin src="/project-BetterThanGPT/assets/index-62317a65.js"></script>
+  <link rel="stylesheet" href="/project-BetterThanGPT/assets/index-c406dd48.css">
 </head>
 
 <body>
@@ -741,10 +741,9 @@
       work of art that is sure to please.
     </p>
     <button
-      class="subscribe-btn btn-fill"
+      class="subscribe-btn btn-fill js-open-modal"
       type="button"
-      id="js-open-modal"
-      data-modal-open
+      data-modal="3"
     >
       Subscribe
     </button>
@@ -940,37 +939,28 @@
     </form>
   </div>
   
-  <div class="explore-overlay is-hidden" id="js-overlay-modal" data-modal>
-  <div class="explore-modal">
-    <button
-      class="explore-modal-close-btn"
-      type="button"
-      id="js-modal-close"
-      data-modal-close
-    >
-      <svg class="explore-modal-close-icon" width="24" height="24">
-        <use
-          href="/project-BetterThanGPT/assets/icons-675917b8.svg#icon-close"
-        ></use>
-      </svg>
-    </button>
-    <div class="explore-modal-img-container"></div>
-    <div class="explore-modal-text">
-      <h2 class="section-title explore-modal-title">
-        Explore our
-        <span class="explore-modal-accent">new chocolate</span> first!
-      </h2>
-      <form class="explore-modal-form">
-        <input
-          class="explore-modal-input"
-          type="email"
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-          placeholder="Enter your email"
-        />
-        <button class="explore-modal-btn-mobile" type="submit">Submit</button>
-        <button class="explore-modal-btn" type="submit">Subscribe</button>
-      </form>
-    </div>
+  <div class="explore-modal modal" data-modal="3">
+  <button class="explore-modal-close-btn js-modal-close" type="button">
+    <svg class="explore-modal-close-icon" width="24" height="24">
+      <use href="/project-BetterThanGPT/assets/icons-cb3b3e36.svg#icon-close"></use>
+    </svg>
+  </button>
+  <div class="explore-modal-img-container"></div>
+  <div class="explore-modal-text">
+    <h2 class="section-title explore-modal-title">
+      Explore our
+      <span class="explore-modal-accent">new chocolate</span> first!
+    </h2>
+    <form class="explore-modal-form">
+      <input
+        class="explore-modal-input"
+        type="email"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+        placeholder="Enter your email"
+      />
+      <button class="explore-modal-btn-mobile" type="submit">Submit</button>
+      <button class="explore-modal-btn" type="submit">Subscribe</button>
+    </form>
   </div>
 </div>
 
