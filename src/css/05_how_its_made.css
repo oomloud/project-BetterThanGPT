@@ -11,6 +11,11 @@
     padding-bottom: 100px;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .how_its_made {
+    padding-bottom: 128px;
+  }
+}
 
 .how_its_made-container {
   display: flex;
@@ -39,26 +44,13 @@
 .title-made {
   color: var(--accent-color);
 }
-/* переделать картинки */
 .how_its_made-img {
-  margin-top: 32px;
-
   background-image: linear-gradient(
     0deg,
     rgba(0, 0, 0, 0.4),
     rgba(0, 0, 0, 0.4)
   );
   border-radius: 15px;
-}
-@media only screen and (min-width: 768px) {
-  .how_its_made-img {
-    margin-top: 50px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .how_its_made-img {
-    margin-top: 0;
-  }
 }
 .how_its_made-title {
   margin-bottom: 20px;
@@ -108,7 +100,7 @@
 }
 .try-chocolates {
   padding: 20px 14px;
-  background-color: var(--secondary-text-color-theme-dark);
+  background-color: var(--primary-text-color-theme-dark);
   border-radius: 15px;
 }
 @media only screen and (min-width: 768px) {
@@ -117,8 +109,15 @@
     max-width: 614px;
   }
 }
-@media only screen and (min-width: 1200px) {
-  .title-him {
-    margin-bottom: 50px;
-  }
+.him-video-container {
+  position: relative;
+}
+
+.how_its_made-icon {
+  position: absolute;
+  z-index: 2;
+  fill: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
