@@ -6,7 +6,7 @@
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
-  background: var(--slider-marker-color);
+  background-image: var(--backdrop-shadow);
 
   width: 100%;
   height: 100%;
@@ -41,6 +41,8 @@
   border-radius: 15px;
 
   background-color: #fafafa;
+  opacity: 0;
+  visibility: hidden;
   z-index: 101;
 
   transition: var(--standard-transition);
