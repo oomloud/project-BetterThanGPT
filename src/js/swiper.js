@@ -16,11 +16,14 @@ const swiper = new Swiper('.swiper', {
       spaceBetween: 18
     },
     // when window width is >= 1200px
-    1138: {
+    1200: {
       slidesPerView: 4,
       spaceBetween: 18
     }
   },
+    
+    mousewheel: { },
+
 
   // If we need pagination
   pagination: {
