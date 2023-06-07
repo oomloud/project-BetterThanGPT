@@ -17,8 +17,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet" />
   <script src="./js/video_01.js" type="text/javascript"></script>
   <title>Simply Chocolate — Main</title>
-  <script type="module" crossorigin src="/project-BetterThanGPT/assets/index-b3c2c01a.js"></script>
-  <link rel="stylesheet" href="/project-BetterThanGPT/assets/index-6c720eef.css">
+  <script type="module" crossorigin src="/project-BetterThanGPT/assets/index-639ade8e.js"></script>
+  <link rel="stylesheet" href="/project-BetterThanGPT/assets/index-eb2fcfd3.css">
 </head>
 
 <body>
@@ -799,7 +799,90 @@
         </nav>
     </div>
 </footer>
-  
+  <div class="buy-overlay-modal buy-is-hidden" data-modal-buy>
+    <div class="buy-modal">
+        <button type="button" class="buy-modal-close-btn" data-modal-buy-close>
+            <svg class="buy-modal-close-icon">
+                <use href="../img/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <h2 class="buy-modal-text">bUY <span class="buy-logo-now">nOW</span> </h2>
+        <ul class="buy-card">
+            <li class="buy-card-item">
+                <img class="img-styles" loading="lazy"
+                    srcset="../img/modal_buy/img_mob@1x-1.png 1x, ../img/modal_buy/img_mob@2x-1.png 2x"
+                    src="../img/modal_buy/img_mob@1x-1.png"
+                    alt="kisspng-chocolate-bar-kinder-chocolate-white-chocolate-chocolate-nuts" />
+                <div class="buy-card-dose">
+                    <p class="buy-card-text">100 g</p>
+                </div>
+            </li>
+            <li class="buy-card-item">
+                <img class="img-styles" loading="lazy"
+                    srcset="../img/modal_buy/img_mob@1x-2.png 1x, ../img/modal_buy/img_mob@2x-2.png 2x"
+                    src="../img/modal_buy/img_mob@1x-2.png"
+                    alt="kisspng-chocolate-bar-praline-kinder-chocolate-bonbon-milk" />
+                <div class="buy-card-dose">
+                    <p class="buy-card-text">200 g</p>
+                </div>
+            </li>
+            <li class="buy-card-item">
+                <img class="img-styles" loading="lazy"
+                    srcset="../img/modal_buy/img_mob@1x-3.png 1x, ../img/modal_buy/img_mob@2x-3.png 2x"
+                    src="../img/modal_buy/img_mob@1x-3.png"
+                    alt="transparent-chocolate-bar-dark-chocolate" />
+                <div class="buy-card-dose">
+                    <p class="buy-card-text">300 g</p>
+                </div>
+            </li>
+        </ul>
+        <form class="buy-form-input" name="modal-form">
+            <label class="buy-modal-label" for="modal-name">Personal information</label>
+            <ul class="buy-list-personal">
+                <li class="buy-item-personal">
+                    <input class="buy-modal-form-input" type="text" name="username" id="modal-name"
+                        placeholder="Name" pattern="\D{1,}">
+                </li>
+                <li class="buy-item-personal">
+                    <input class="buy-modal-form-input" type="text" name="usersurname"
+                        id="modal-surname" placeholder="Surname" pattern="\D{1,}">
+                </li>
+            </ul>
+            <label class="buy-modal-label" for="modal-email">Email</label>
+            <div class="buy-modal-form-area">
+                <input class="buy-modal-form-input" type="email" name="email" id="modal-email"
+                    placeholder="Enter your email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+            </div>
+            <label class="buy-modal-label" for="modal-phone">Phone number</label>
+            <div class="buy-modal-form-area">
+                <input class="buy-modal-form-input buy-phon" type="tel" inputmode="numeric"
+                    pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" name="userphon"
+                    id="modal-phone" placeholder="Phone number">
+                <div class="buy-flag-phon">
+                    <svg class="buy-modal-form-icon buy-icon-flag">
+                        <use href="../img/icons.svg#icon-flag-ua"></use>
+                    </svg>
+                    <p class="text">+380</p>
+                </div>
+            </div>
+            <label class="buy-modal-label" for="modal-card">Card number</label>
+            <div class="buy-modal-form-area">
+                <input class="buy-modal-form-input buy-mastercard" type="number" name="userphon"
+                    id="modal-card" placeholder="Enter card">
+                <svg class="buy-modal-form-icon buy-icon-mastercard">
+                    <use href="../img/icons.svg#icon-mastercard"></use>
+                </svg>
+            </div>
+            <label class="buy-modal-label" for="modal-comment">Comment</label>
+            <textarea class="buy-modal-form-comment" name="comment" id="modal-comment" rows="6"
+                placeholder="Enter text"></textarea>
+            <button type="submit" class="buy-button-submit">Submit</button>
+        </form>
+    </div>
+</div>
+<!-- ======================SCRIPT======================== -->
+<script src="/js/modal.js"></script>
   
   <div class="explore-overlay is-hidden" id="js-overlay-modal" data-modal>
   <div class="explore-modal">
