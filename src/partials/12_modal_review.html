@@ -1,51 +1,41 @@
 <!-- Modal Window -->
-<div class="review-overlay is-hidden" review-modal>
-  <div class="review-modal">
-    <button class="review-modal-close-btn" type="button" review-modal-close>
-      <svg class="review-modal-close-icon" width="24" height="24">
-        <use href="/img/icons.svg#icon-close"></use>
-      </svg>
-    </button>
+<div class="review-modal modal" data-modal="2">
+  <button class="review-modal-close-btn js-modal-close" type="button">
+    <svg class="review-modal-close-icon" width="24" height="24">
+      <use href="/img/icons.svg#icon-close"></use>
+    </svg>
+  </button>
 
-    <div class="review-modal-text">
-      <h2 class="section-title explore-modal-title">
-        leave a review about
-        <span class="review-modal-accent">our chocolate</span> first!
-      </h2>
-      <form class="review-modal-form">
-        <input
-          class="review-modal-input"
-          type="name"
-          pattern="[A-Z a-z]"
-          placeholder="Name"
-        />
-        <input
-          class="review-modal-input"
-          type="email"
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-          placeholder="Enter your email"
-        />
+  <div class="review-modal-text">
+    <h2 class="section-title explore-modal-title">
+      leave a review about
+      <span class="review-modal-accent">our chocolate</span> first!
+    </h2>
+    <form class="review-modal-form">
+      <input
+        class="review-modal-input"
+        type="name"
+        pattern="[A-Z a-z]"
+        placeholder="Name"
+      />
+      <input
+        class="review-modal-input"
+        type="email"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+        placeholder="Enter your email"
+      />
 
-        <input id="phone" type="tel" name="phone" class="review-modal-input" />
+      <input id="phone" type="tel" name="phone" class="review-modal-input" />
 
-        <textarea
-          class="review-modal-input txtarea"
-          name="modal_comment"
-          id="modal_comment"
-          rows="3"
-          placeholder="Enter text"
-        ></textarea>
+      <textarea
+        class="review-modal-input txtarea"
+        name="modal_comment"
+        id="modal_comment"
+        rows="3"
+        placeholder="Enter text"
+      ></textarea>
 
-        <button class="review-modal-btn" type="submit">Send</button>
-      </form>
-
-      <script>
-        const phoneInputField = document.querySelector('#phone');
-        const phoneInput = window.intlTelInput(phoneInputField, {
-          utilsScript:
-            'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js',
-        });
-      </script>
-    </div>
+      <button class="review-modal-btn" type="submit">Send</button>
+    </form>
   </div>
 </div>
